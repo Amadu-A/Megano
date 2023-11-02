@@ -1,0 +1,91 @@
+{% load static %}
+{% load i18n %}
+
+{% if user.is_authenticated %}
+    {% if items %}
+        {% for item in items %}
+            <div class="Cart-product" id="{{ item.product.id }}">
+                <div class="Cart-block Cart-block_row">
+                    <div class="Cart-block Cart-block_pict">
+                        <a class="Cart-pict" href="#">
+                            <img class="Cart-img"
+                                 src="{{ item.product.image.all.0.image.url }}"
+                                 alt="card.jpg"/>
+                        </a>
+                    </div>
+                    <div class="Cart-block Cart-block_info">
+                        <a class="Cart-title" href="{% url 'product' product_id=item.product.id %}">{{ item.product.title }}</a>
+                        <div class="Cart-desc">{{ item.product.description| truncatechars:30 }}</div>
+                    </div>
+                    {% include 'includes/price_product_in_cart.html' %}
+                </div>
+                <div class="Cart-block Cart-block_amount">
+                    <div class="Cart-amount">
+                        <div class="Amount" name="amount-cart">
+                            <button class="Amount-remove" type="button"></button>
+                            <input class="Amount-input form-input"
+                                   name="amount"
+                                   type="text"
+                                   value={{item.count}}>
+                            <button class="Amount-add" name={{item.seller.id}} type="button"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Cart-block Cart-block_delete">
+                    <a class="Cart-delete" href="#">
+                        <img src="{% static '/assets/img/icons/card/delete.svg' %}"
+                             alt="delete.svg"/>
+                    </a>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <h1>{% trans 'The cart is empty' %}</h1>
+    {% endif %}
+{% else %}
+    {% if items %}
+        {% for item in items %}
+            <div class="Cart-product" id="{{ item.product }}">
+                <div class="Cart-block Cart-block_row">
+                    <div class="Cart-block Cart-block_pict">
+                        <a class="Cart-pict" href="#">
+                            <img class="Cart-img" src="{{ item.image }}" alt="card.jpg"/>
+                        </a>
+                    </div>
+                    <div class="Cart-block Cart-block_info">
+                        <a class="Cart-title" href=""{% url 'product' product_id=item.product %}"">{{ item.product_name }}</a>
+                        <div class="Cart-desc"></div>
+                    </div>
+                    <div class="Cart-block Cart-block_price">
+                        <div class="Cart-price">{{ item.amount|floatformat:"2" }}</div>
+                    </div>
+                </div>
+                <div class="Cart-block Cart-block_amount">
+                    <div class="Cart-amount">
+                        <div class="Amount" name="amount-cart">
+                            <button class="Amount-remove" type="button"></button>
+                            <input class="Amount-input form-input"
+                                   name="amount"
+                                   type="text"
+                                   value="{{ item.count }}"/>
+                            <button class="Amount-add" name="{{ item.seller }}" type="button"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Cart-block Cart-block_delete">
+                    <a class="Cart-delete" href="#">
+                        <img src="{% static '/assets/img/icons/card/delete.svg' %}"
+                             alt="delete.svg"/>
+                    </a>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <h1>{% trans 'The cart is empty' %}</h1>
+    {% endif %}
+{% endif %}
+
+{% block script %}
+    <script src="{% static '/assets/js/cart_edit.js' %}"></script>
+    <script src="{% static '/assets/js/delete_product_in_cart.js' %}"></script>
+{% endblock script %}

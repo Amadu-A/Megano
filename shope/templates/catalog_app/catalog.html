@@ -1,0 +1,225 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% load unique_tags %}
+{% load i18n %}
+
+<body class="Site">
+{% block content_body %}
+    <div class="Middle Middle_top">
+        <div class="Section Section_column Section_columnLeft">
+            <div class="wrap">
+                <div class="Section-column">
+                    <div class="Section-columnSection">
+                        <header class="Section-header">
+                            <strong class="Section-title">{% trans 'Filter' %}</strong>
+                        </header>
+                        <div class="Section-columnContent">
+                            <form class="form" action="{% url 'catalog' %}" method="get">
+                                <div class="form-group">
+                                    <div class="range Section-columnRange">
+                                        <input class="range-line"
+                                               id="price"
+                                               data-from="100"
+                                               data-max="12300"
+                                               data-min="100"
+                                               data-to="12300"
+                                               data-type="double"
+                                               name="price"
+                                               type="text">
+                                        <div class="range-price">
+                                            {% trans 'Price' %}:&#32;
+                                            <div class="rangePrice"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-input form-input_full"
+                                           id="title"
+                                           name="title"
+                                           type="text"
+                                           placeholder={% trans 'Name' %}>
+                                </div>
+                                <div class="form-group">
+                                    <!-- - var options = setOptions(items, ['value', 'selected', 'disabled']);-->
+                                </div>
+                                <div class="form-group">
+                                    <label class="toggle">
+                                        <input type="checkbox" name="in_stock">
+                                        <span class="toggle-box"></span><span
+                                            class="toggle-text">{% trans 'Only products in stock' %}</span>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="toggle">
+                                        <input type="checkbox" name="free_delivery">
+                                        <span class="toggle-box"></span><span
+                                            class="toggle-text">{% trans 'With free delivery' %}</span>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <div class="buttons">
+                                        <button type="submit"
+                                                class="btn btn_square btn_dark btn_narrow">{% trans 'Filter' %}</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="Section-columnSection">
+                        <header class="Section-header">
+                            <strong class="Section-title">{% trans 'Popular tags' %}</strong>
+                        </header>
+                        <div class="Section-columnContent">
+                            <form action="{% url 'catalog' %}" method="get">
+                                <div class="buttons">
+                                    {% unique_tags as unique_tags %}
+                                    {% for tag in unique_tags %}
+                                        <button class="btn btn_default btn_sm" name="tag"
+                                                value="{{ tag.name }}">{{ tag.name }}</button>
+                                    {% endfor %}
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="Section-content">
+                    <div class="Sort">
+                        <div class="Sort-title">{% trans 'Sort by:' %}</div>
+                        <form action="{% url 'catalog' %}" method="get">
+                            <div class="Sort-variants">
+                                <button class="btn btn_default btn_sm" name="sort"
+                                        value="number_of_sales">{% trans 'Popularity' %}</button>
+                                <button class="btn btn_default btn_sm" name="sort"
+                                        value="min_price">{% trans 'Price' %}</button>
+                                <button class="btn btn_default btn_sm" name="sort"
+                                        value="rewiew">{% trans 'Reviews' %}</button>
+                                <button class="btn btn_default btn_sm" name="sort"
+                                        value="created_at">{% trans 'Novelty' %}</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="Cards">
+                        {% if object_list %}
+                            {% for product in object_list %}
+
+                                    <div class="Card" data-product="{{ product.id }}">
+                                        {% if product.discountproduct_set.exists or product.category.discountproduct_set.exists %}
+                                            <div class="Card-btn sale-btn">
+                                              <img height="40" width="40" src="{% static 'assets/img/icons/card/discount.svg' %}" alt="cart.svg">
+                                            </div>
+                                        {% endif %}
+
+                                    <form action="{% url 'change_viewed' product_id=product.id %}" method="post">
+                                        {% csrf_token %}
+                                        <button class="Card-picture btn_reset"
+                                                data-name="{{ product.image.all.0.image.url }}" type="submit">
+                                            <img
+                                                    src="{{ product.image.all.0.image.url }}"
+                                                    alt="{{ product.image.all.0.image.name }}">
+                                        </button>
+                                    </form>
+
+                                    <div class="Card-content">
+                                        <form action="{% url 'change_viewed' product_id=product.id %}" method="post">
+                                            {% csrf_token %}
+                                            <strong class="Card-title">
+                                                <button class=" btn_reset" type="submit">
+                                                    {{ product.title|truncatechars:48 }}
+                                                </button>
+                                            </strong>
+                                        </form>
+
+                                        <div class="Card-description">
+                                            <div class="Card-cost">
+                                                {% for object in price_seller_list %}
+                                                    {% if object.product_id == product.id %}
+                                                        <span class="Card-price">{{ object.price|floatformat:"2" }}</span>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            </div>
+                                            {% for product_tag in product.tag.all %}
+                                                {% if product.tag.all|length == 1 %}
+                                                    <div class="Card-category">{{ product_tag }}</div>
+                                                {% else %}
+                                                    {% if product_tag == product.tag.all.last %}
+                                                        <div class="Card-category">{{ product_tag }}</div>
+                                                    {% else %}
+                                                        <div class="Card-category">{{ product_tag }},</div>
+                                                    {% endif %}
+                                                {% endif %}
+                                            {% endfor %}
+                                            <div class="Card-hover">
+                                                {% for object in price_seller_list %}
+                                                    {% if object.product_id == product.id %}
+                                                        <a class="Card-btn cart-btn" data-name="{{ product.title }}"
+                                                           data-value="{{ object.price }}"
+                                                           data-seller="{{ object.seller }}">
+                                                            <img src="{% static '/assets/img/icons/card/cart.svg' %}"
+                                                                 alt="cart.svg">
+                                                        </a>
+                                                    {% endif %}
+                                                {% endfor %}
+                                                <form class="Card-btn comparison-add"
+                                                      action="{% url 'add_comparison' product_id=product.id %}"
+                                                      method="post">
+                                                    {% csrf_token %}
+                                                    <button class="Card-btn btn_reset compare_btn" type="submit"
+                                                            data-product_id="{{ product.id }}">
+                                                        <div class="ProductCard-cartElement">
+                                                            <a class="Card-btn" href="#">
+                                                                <img src="{% static 'assets/img/icons/card/change.svg' %}"
+                                                                     alt="change.svg">
+                                                            </a>
+                                                        </div>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            {% endfor %}
+                        {% else %}
+                            <h2>{% trans 'There are no products matching your request.' %}</h2>
+                        {% endif %}
+                    </div>
+                    <div class="Pagination">
+                        <div class="Pagination-ins">
+                            {% if page_obj.has_previous %}
+                                <a class="Pagination-element Pagination-element_prev"
+                                   href="?page={{ page_obj.previous_page_number }}">
+                                <img src="{% static '/assets/img/icons/prevPagination.svg' %}"
+                                     alt="prevPagination.svg">
+                            {% endif %}
+                            </a>
+                            {% for i_page in paginator.page_range %}
+                                {% if i_page == page_obj.number %}
+                                    <a class="Pagination-element Pagination-element_current"
+                                       href="?page={{ i_page }}">
+                                        <span class="Pagination-text">{{ i_page }}</span></a>
+                                {% else %}
+                                    <a class="Pagination-element" href="?page={{ i_page }}">
+                                        <span class="Pagination-text">{{ i_page }}</span></a>
+                                {% endif %}
+                            {% endfor %}
+                            {% if page_obj.has_next %}
+                                <a class="Pagination-element Pagination-element_prev"
+                                   href="?page={{ page_obj.next_page_number }}">
+                                    <img src="{% static '/assets/img/icons/nextPagination.svg' %}"
+                                         alt="nextPagination.svg">
+                                </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content_body %}
+
+{% block script %}
+    <script src="{% static '/assets/js/add_to_cart.js' %}"></script>
+{% endblock script %}
+
+</body>

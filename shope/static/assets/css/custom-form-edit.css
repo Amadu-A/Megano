@@ -1,0 +1,103 @@
+.register {
+  width: 510px;
+}
+
+.menu-item-custom {
+  min-width: 100px;
+}
+
+.card-heigth-auto {
+  min-height: 600px;
+
+}
+
+.custom-form-edit {
+  display: inline;
+  margin-right: 8px;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.banner-btn {
+  cursor: pointer;
+  background: #f3f4f9;
+  color: #424650;
+  border: 0;
+}
+
+.BannersHomeBlock-form {
+  padding: 0;
+}
+
+.BannersHomeBlock-form:not(:last-child) {
+  margin-right: 34px;
+}
+
+.delete-btn {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+}
+
+.sale-btn {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  /*overflow: hidden;*/
+  border-radius: 50px;
+}
+
+.ProductCard-title-custom {
+  min-height: 77px;
+}
+
+.ProductCard-photo-custom img {
+  max-height: 200px;
+  min-height: 200px;
+}
+
+.table-line-custom {
+  height: 140px;
+  overflow-y: scroll;
+}
+
+table.tableSection {
+  display: table;
+  width: 100%;
+}
+
+table.tableSection thead,
+table.tableSection tbody {
+  width: 100%;
+}
+
+table.tableSection thead {
+  overflow-y: scroll;
+  display: table;
+  table-layout: fixed;
+  width: calc(100% - 16px); /* assuming scrollbar width as 16px */
+}
+
+.tableSection {
+  width: 100%;
+  height: 130px;
+  text-align: left;
+  display: table-caption;
+  table-layout: fixed;
+  overflow-y: scroll;
+}
+
+@media (max-width: 960px) {
+  .register {
+    width: inherit;
+  }
+}

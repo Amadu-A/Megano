@@ -1,0 +1,21 @@
+{% extends 'auth_app/base-auth.html' %}
+{% load i18n %}
+
+
+{% block content %}
+    <div class="header">
+        <h3 class="sign-in">{% trans 'Sign in' %}</h3>
+    </div>
+    <div class="clear"></div>
+    <form action="{% url 'auth_app:login' %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div>
+            <input type="submit" value={% trans 'Sign in' %}/>
+        </div>
+        <a class="forgot-label" href="{% url 'auth_app:e-mail' %}">{% trans 'Forgot your password?' %}</a>
+        <a class="registr" href="{% url 'auth_app:register' %}">
+            {% trans 'Registration' %}
+        </a>
+    </form>
+{% endblock content %}

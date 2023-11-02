@@ -1,0 +1,159 @@
+{% extends "core/base.html" %}
+{% load i18n %}
+{% load static %}
+{% load  core_tags %}
+{% block content_body %}
+    <div class="Middle Middle_top">
+        <div class="Section Section_column Section_columnRight Section_columnWide Order">
+            <div class="wrap">
+                <div class="Section-column">
+                    <div class="Section-columnSection">
+                        <header class="Section-header">
+                            <strong class="Section-title">{% trans "Progress" %}</strong>
+                        </header>
+                        <div class="Section-columnContent">
+                            <div class="NavigateProfile">
+                                <ul class="menu menu_vt">
+                                    <li class="menu-item_ACTIVE menu-item">
+                                        <a class="menu-link" href="#step1">{% trans "Step 1. User's settings" %}</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="#step2">{% trans "Step 2. Delivery" %}</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="#step3">{% trans "Step 3. Payment" %}</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="#step4">{% trans "Step 4. Confirmation" %}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Section-content">
+                    <form class="form" action="" method="post">
+                        {% csrf_token %}
+                        <div class="Order-block Order-block_OPEN" id="step1">
+                            <header class="Section-header Section-header_sm">
+                                <h2 class="Section-title">{% trans "Step 1. User's settings" %}</h2>
+                            </header>
+                            <div class="row">
+                                <div class="row-block">
+                                    <div class="form-group">
+                                        <label class="form-label" for="name">{{ user_form.middle_name.label }}</label>
+                                        {{ user_form.middle_name }}
+                                        <div class="form-error">{{ user_form.middle_name.errors }}</div>
+                                        <input name='user' hidden value={{ request.user.id }}>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="phone">{{ profile_form.phone.label }}</label>
+                                        {{ profile_form.phone }}
+                                        <div class="form-error">{{ profile_form.phone.errors }}</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="mail">{{ user_form.email.label }}</label>
+                                        {{ user_form.email }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Order-footer">
+                                <a class="btn btn_success Order-next" href="#step2">{% trans "Next" %}</a>
+                            </div>
+                        </div>
+                        <div class="Order-block" id="step2">
+                            <header class="Section-header Section-header_sm">
+                                <h2 class="Section-title">{% trans "Step 2. Delivery" %}</h2>
+                            </header>
+                            <div class="form-group" id="delivery-type">{{ form.delivery_type }}</div>
+                            <div class="form-group">
+                                <label class="form-label" for="city">{{ form.city.label }}</label>
+                                {{ form.city }}
+                                <div class="form-error">{{ form.city.errors }}</div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="address">{{ form.address.label }}</label>
+                                {{ form.address }}
+                                <div class="form-error">{{ form.address.errors }}</div>
+                            </div>
+                            <div class="Order-footer">
+                                <a class="btn btn_success Order-next" href="#step3">{% trans "Next" %}</a>
+                            </div>
+                        </div>
+                        <div class="Order-block" id="step3">
+                            <header class="Section-header Section-header_sm">
+                                <h2 class="Section-title">{% trans "Step 3. Payment" %}</h2>
+                            </header>
+                            <div class="form-group">{{ form.pay_type }}</div>
+                            <div class="Order-footer">
+                                <a class="btn btn_success Order-next" href="#step4">{% trans "Next" %}</a>
+                            </div>
+                        </div>
+                        <div class="Order-block" id="step4">
+                            <header class="Section-header Section-header_sm">
+                                <h2 class="Section-title">{% trans "Step 4. Confirmation" %}</h2>
+                            </header>
+                            <!--+div.Order.-confirmation-->
+                            <div class="Order-infoBlock">
+                                <div class="Order-personal">
+                                    <div class="row">
+                                        <div class="row-block">
+                                            <div class="Order-info">
+                                                <div class="Order-infoType">{{ user_form.middle_name.label }}:</div>
+                                                <div class="Order-infoContent"id="user-name">{% trans 'Ivanov Ivan Ivanovich' %}</div>
+                                            </div>
+                                            <div class="Order-info">
+                                                <div class="Order-infoType">{{ profile_form.phone.label }}:</div>
+                                                <div class="Order-infoContent" id="user-phone">+7000000000</div>
+                                            </div>
+                                            <div class="Order-info">
+                                                <div class="Order-infoType">{{ user_form.email.label }}:</div>
+                                                <div class="Order-infoContent"id="user-email">send@test.test</div>
+                                            </div>
+                                            <div class="Order-info Order-info_pay">
+                                                <div class="Order-infoType">{{ form.pay_type.label }}:</div>
+                                                <div class="Order-infoContent" id="order-pay">Онлайн картой</div>
+                                            </div>
+                                        </div>
+                                        <div class="row-block">
+                                            <div class="Order-info Order-info_delivery">
+                                                <div class="Order-infoType">{{ form.delivery_type.label }}:</div>
+                                                <div class="Order-infoContent" id="order-delivery">{% trans 'Regular delivery' %}</div>
+                                            </div>
+                                            <div class="Order-info Order-info_pay">
+                                                <div class="Order-infoType">{% trans "Cost delivery" %}:</div>
+                                                <div class="Order-infoContent" id="order-cost-delivery">{% trans 'Online card' %}</div>
+                                            </div>
+                                            <div class="Order-info">
+                                                <div class="Order-infoType">{{ form.city.label }}:</div>
+                                                <div class="Order-infoContent" id="order-city">{% trans 'Moscow' %}</div>
+                                            </div>
+                                            <div class="Order-info">
+                                                <div class="Order-infoType">{{ form.address.label }}:</div>
+                                                <div class="Order-infoContent" id="order-address">{% trans 'Academic street, house 12, apartment 10' %}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Cart Cart_order">
+                                    {% for i_item in cart.cartitems.all %}
+                                        {% include "includes/product_in_order.html" %}
+                                    {% endfor %}
+                                    <div class="Cart-total">
+                                        <div class="Cart-block Cart-block_total">
+                                            <strong class="Cart-title">{% trans "Amount" %}:</strong><span class="Cart-price", id="Cart-price">{{ total_amount| floatformat:2 }}</span>
+                                            <input id="Total-amount-value" name='amount' hidden value={{ total_amount }}>
+                                        </div>
+                                        <div class="Cart-block">
+                                            <button class="btn btn_primary btn_lg" type="submit">{% trans "Pay" %}</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content_body %}

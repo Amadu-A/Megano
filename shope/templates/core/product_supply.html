@@ -1,0 +1,330 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content_header_slyder %}
+<div class="Header-slider">
+  <div class="Slider Slider_main">
+    <div class="Slider-box">
+      {% for slider in slider_list %}
+        <form action="{% url 'change_viewed' product_id=slider.product.id %}" method="post">
+          {% csrf_token %}
+          <div class="Slider-item">
+            <div class="Slider-content">
+              <div class="row">
+                <div class="row-block">
+                  <strong class="Slider-title">
+                    {{ slider.product.title|truncatewords:4 }}
+                    <span class="text_primary"></span>
+                  </strong>
+                  <div class="Slider-text">{{ slider.description }}
+                  </div>
+                  <div class="Slider-footer">
+                    <button class="btn btn_primary " href="{% url 'product' product_id=slider.product.id %}" type="submit">{% trans 'Look at this' %}</button>
+                  </div>
+                </div>
+                <div class="row-block">
+                  <div class="Slider-img"><img src="{{ slider.image.url }}" alt="slider.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      {% endfor %}
+    </div>
+    <div class="Slider-navigateWrap">
+      <div class="Slider-navigate">
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content_header_slyder %}
+
+{% block content_body %}
+  <div class="Middle">
+    <div class="Section">
+      <div class="wrap">
+        <div class="BannersHome">
+          {% if banner_list %}
+            {% for banner in banner_list %}
+              <form class="BannersHomeBlock BannersHomeBlock-form" action="{% url 'catalog' %}" method="get">
+                <button class="BannersHomeBlock btn_reset banner-btn" href="#" name="category"
+                                                value="{{ banner.category.id }}">
+                  <div class="BannersHomeBlock-row">
+                    <div class="BannersHomeBlock-block">
+                      <strong class="BannersHomeBlock-title">{{ banner.category.title }}
+                      </strong>
+                      <div class="BannersHomeBlock-content">
+                        {% trans 'from' %}&#32;<span class="BannersHomeBlock-price">{{ banner.min_price|floatformat:"2" }}</span>
+                      </div>
+                    </div>
+                    <div class="BannersHomeBlock-block">
+                      <div class="BannersHomeBlock-img"><img src="{{ banner.image.url }}" alt="videoca.png">
+                      </div>
+                    </div>
+                  </div>
+                </button>
+              </form>
+            {% endfor %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="Section Section_column Section_columnLeft Section_columnDesktop">
+      <div class="wrap">
+        <div class="Section-column">
+          <div class="Section-columnSection Section-columnSection_mark">
+            <header class="Section-columnHeader">
+              <strong class="Section-columnTitle">{% trans 'LIMITED OFFERS' %}
+              </strong>
+            </header>
+            {% if offer_day %}
+            <form action="{% url 'change_viewed' product_id=offer_day.id %}" method="post">
+              {% csrf_token %}
+                <div class="Card">
+                  <button class="Card-picture btn_reset" href="{% url 'product' product_id=offer_day.id %}" type="submit">
+                    <img src="{{ offer_day.image.all.0.image.url }}" alt="card.jpg">
+                  </button>
+                  <div class="Card-content">
+                    <strong class="Card-title">
+                      <button class="btn_reset" href="{% url 'product' product_id=offer_day.id %}" type="submit">{{ offer_day.title }}</button>
+                    </strong>
+                    <div class="Card-description">
+                      <div class="Card-cost">
+                        <span class="Card-priceOld">{{ offer_day.max_price|floatformat:"2" }}</span>
+                        <span class="Card-price">
+                          {% for object in price_seller_list %}
+                            {% if object.product_id == offer_day.id %}
+                              {{ object.discount_price|floatformat:"2" }}
+                            {% endif %}
+                          {% endfor %}
+                        </span>
+                      </div>
+                      <div class="Card-category">
+                        {% for product_tag in offer_day.tag.all %}
+                          {% if product_tag|length == 1 %}
+                            <div class="Card-category">{{ product_tag }}</div>
+                          {% else %}
+                            <div class="Card-category">{{ product_tag }},</div>
+                          {% endif %}
+                        {% endfor %}
+                      </div>
+                    </div>
+                    <div class="CountDown" data-date="{{ tomorrow_day }} 00:00">
+                      <div class="CountDown-block">
+                        <div class="CountDown-wrap">
+                          <div class="CountDown-days">
+                          </div><span class="CountDown-label">{% trans 'days' %}</span>
+                        </div>
+                      </div>
+                      <div class="CountDown-block">
+                        <div class="CountDown-wrap">
+                          <div class="CountDown-hours">
+                          </div><span class="CountDown-label">{% trans 'hours' %}</span>
+                        </div>
+                      </div>
+                      <div class="CountDown-block">
+                        <div class="CountDown-wrap">
+                          <div class="CountDown-minutes">
+                          </div><span class="CountDown-label">{% trans 'mins' %}</span>
+                        </div>
+                      </div>
+                      <div class="CountDown-block">
+                        <div class="CountDown-wrap">
+                          <div class="CountDown-secs">
+                          </div><span class="CountDown-label">{% trans 'secs' %}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </form>
+            {% endif %}
+          </div>
+        </div>
+        <div class="Section-content">
+          <header class="Section-header">
+            <h2 class="Section-title">{% trans 'Popular products' %}
+            </h2>
+          </header>
+            <div class="Cards">
+              {% if product_top_list %}
+              {% for product in product_top_list %}
+
+                <div class="Card hide_md hide_1450" data-product="{{product.id}}">
+                  {% if product.discountproduct_set.exists or product.category.discountproduct_set.exists %}
+                    <div class="Card-btn sale-btn">
+                      <img height="40" width="40" src="{% static 'assets/img/icons/card/discount.svg' %}" alt="cart.svg">
+                    </div>
+                  {% endif %}
+                  {% if product %}
+                  <form action="{% url 'change_viewed' product_id=product.id %}" method="post">
+                    {% csrf_token %}
+                    <button class="Card-picture btn_reset" data-name="{{ product.image.all.0.image.url }}" href="{% url 'product' product_id=product.id %}" type="submit">
+                      {% if product.image %}
+                        <img src="{{ product.image.all.0.image.url }}" alt="{{ product.image.all.0.image.name }}">
+                      {% endif %}
+                    </button>
+                  </form>
+                  {% endif %}
+                    <div class="Card-content">
+                      <strong class="Card-title">
+                        {% if product  %}
+                        <form action="{% url 'change_viewed' product_id=product.id %}" method="post">
+                          {% csrf_token %}
+                          <button class=" btn_reset" href="{% url 'product' product_id=product.id %}" type="submit">{{ product.title|truncatechars:48 }}</button>
+                        </form>
+                        {% endif %}
+                      </strong>
+                      <div class="Card-description">
+                        <div class="Card-cost">
+                          <span class="Card-price">
+                            {% for object in price_seller_list %}
+                              {% if object.product_id == product.id %}
+                                {{ object.discount_price|floatformat:"2" }}
+                              {% endif %}
+                            {% endfor %}
+                          </span>
+                        </div>
+                        <div class="Card-category">
+                          {% for product_tag in product.tag.all %}
+                            {% if product.tag.all|length == 1 %}
+                              <div class="Card-category">{{ product_tag }}</div>
+                            {% else %}
+                              {% if product_tag == product.tag.all.last %}
+                                <div class="Card-category">{{ product_tag }}</div>
+                              {% else %}
+                                <div class="Card-category">{{ product_tag }},</div>
+                              {% endif %}
+                            {% endif %}
+                          {% endfor %}
+                        </div>
+                        <div class="Card-hover">
+                          {% for object in price_seller_list %}
+                            {% if object.product_id == product.id %}
+                            <a class="Card-btn cart-btn" href="#" data-value="{{object.price}}" data-seller="{{ object.seller }}" data-name="{{product.title}}">
+                              <img src="{% static 'assets/img/icons/card/cart.svg' %}" alt="cart.svg">
+                            </a>
+                            {% endif %}
+                          {% endfor %}
+                          <form class="Card-btn comparison-add" action="{% url 'add_comparison' product_id=product.id %}" method="post">
+                            {% csrf_token %}
+                            <button class="Card-btn btn_reset compare_btn" type="submit" data-product_id="{{ product.id }}">
+                              <div class="ProductCard-cartElement">
+                                <a class="Card-btn" href="#">
+                                  <img src="{% static 'assets/img/icons/card/change.svg' %}" alt="change.svg">
+                                </a>
+                              </div>
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              {% endfor %}
+              {% endif %}
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="Section Section_column Section_columnRight">
+      <div class="wrap">
+        <div class="Section-content">
+          <div class="Slider Slider_carousel">
+            <header class="Section-header Section-header_close">
+              <h2 class="Section-title">{% trans 'LIMITED EDITION' %}
+              </h2>
+              <div class="Section-control">
+                <div class="Slider-navigate">
+                </div>
+              </div>
+            </header>
+            <div class="Slider-box Cards">
+              {% if product_limited_list %}
+              {% for product in product_limited_list %}
+                <div class="Slider-item">
+                  <div class="Slider-content">
+                    <div class="Card" data-product="{{product.id}}">
+                      {% if product.discountproduct_set.exists or product.category.discountproduct_set.exists %}
+                        <div class="Card-btn sale-btn">
+                          <img height="40" width="40" src="{% static 'assets/img/icons/card/discount.svg' %}" alt="cart.svg">
+                        </div>
+                      {% endif %}
+                      {% if product  %}
+                      <form action="{% url 'change_viewed' product_id=product.id %}" method="post">
+                        {% csrf_token %}
+                        <button class="Card-picture btn_reset" data-name="{{ product.image.all.0.image.url }}" href="{% url 'product' product_id=product.id %}" type="submit">
+                          {% if product.image %}
+                            <img src="{{ product.image.all.0.image.url }}" alt="card.jpg">
+                          {% endif %}
+                        </button>
+                      </form>
+                      {% endif %}
+                      <div class="Card-content">
+                        <strong class="Card-title">
+                          <form action="{% url 'change_viewed' product_id=product.id %}" method="post">
+                            {% csrf_token %}
+                            <button class="btn_reset" href="{% url 'product' product_id=product.id %}" type="submit">{{ product.title }}</button>
+                          </form>
+                        </strong>
+                        <div class="Card-description">
+                          <div class="Card-cost">
+                            <span class="Card-price">
+                              {% for object in price_seller_list %}
+                                {% if object.product_id == product.id %}
+                                  {{ object.discount_price|floatformat:"2" }}
+                                {% endif %}
+                              {% endfor %}
+                            </span>
+                          </div>
+                          <div class="Card-category">
+                            {% for product_tag in product.tag.all %}
+                              {% if product.tag.all|length == 1 %}
+                                <div class="Card-category">{{ product_tag }}</div>
+                              {% else %}
+                                {% if product_tag == product.tag.all.last %}
+                                  <div class="Card-category">{{ product_tag }}</div>
+                                {% else %}
+                                  <div class="Card-category">{{ product_tag }},</div>
+                                {% endif %}
+                              {% endif %}
+                            {% endfor %}
+                          </div>
+                          <div class="Card-hover">
+                            {% for object in price_seller_list %}
+                              {% if object.product_id == product.id %}
+                                <a class="Card-btn cart-btn" href="#" data-value="{{object.price}}" data-seller="{{ object.seller }}" data-name="{{product.title}}">
+                                  <img src="{% static 'assets/img/icons/card/cart.svg' %}" alt="cart.svg">
+                                </a>
+                              {% endif %}
+                            {% endfor %}
+                            <form class="Card-btn comparison-add" action="{% url 'add_comparison' product_id=product.id %}" method="post">
+                              {% csrf_token %}
+                              <button class="Card-btn btn_reset compare_btn" type="submit" data-product_id="{{ product.id }}">
+                                <div class="ProductCard-cartElement">
+                                  <a class="Card-btn" href="#">
+                                    <img src="{% static 'assets/img/icons/card/change.svg' %}" alt="change.svg">
+                                  </a>
+                                </div>
+                              </button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content_body %}
+
+{% block script %}
+    <script src="{% static '/assets/js/add_to_cart.js' %}"></script>
+{% endblock script %}

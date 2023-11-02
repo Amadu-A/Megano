@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+{% load static %}
+{% load i18n %}
+<html lang="ru">
+    <head>
+        <title>{% trans 'Megano' %}</title>
+        <meta name="description" content="Описание страницы">
+        <meta charset="utf-8">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <link href="{% static 'favicon.ico' %}" rel="shortcut icon">
+        <link rel="preload"
+              href="{% static 'assets/fonts/Roboto/Roboto-Regular.woff' %}"
+              as="font">
+        <link rel="preload"
+              href="{% static 'assets/fonts/Roboto/Roboto-Italic.woff' %}"
+              as="font">
+        <link rel="preload"
+              href="{% static 'assets/fonts/Roboto/Roboto-Bold.woff' %}"
+              as="font">
+        <link rel="preload"
+              href="{% static 'assets/fonts/Roboto/Roboto-Bold_Italic.woff' %}"
+              as="font">
+        <link rel="preload"
+              href="{% static 'assets/fonts/Roboto/Roboto-Light.woff' %}"
+              as="font">
+        <link rel="preload"
+              href="{% static 'assets/fonts/Roboto/Roboto-Light_Italic.woff' %}"
+              as="font">
+        <link rel="stylesheet" href="{% static 'assets/css/fonts.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/basic.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/extra.css' %}">
+        <link rel="stylesheet"
+              href="{% static 'assets/css/custom-form-edit.css' %}">
+        <script src="{% static 'assets/plg/CountDown/countdown.js' %}"></script>
+        <script src="https://unpkg.com/imask"></script>
+        <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <meta name="csrf-token" content="{{ csrf_token }}">
+    </head>
+    <body class="Site">
+        <header class="Header">
+            <div class="ControlPanel">
+                <div class="wrap">
+                    <div class="row ControlPanel-row">
+                        <div class="row-block">
+                            <div class="row ControlPanel-rowSplit">
+                                <div class="row-block hide_700">
+                                    <ul class="menu menu_img menu_smallImg ControlPanel-menu">
+                                        <li class="menu-item">
+                                            <a class="menu-link" href="#">
+                                                <img src="{% static 'assets/img/icons/socialHeader/tw.svg' %}"
+                                                     alt="tw.svg">
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a class="menu-link" href="#">
+                                                <img src="{% static 'assets/img/icons/socialHeader/in.svg' %}"
+                                                     alt="in.svg">
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a class="menu-link" href="#">
+                                                <img src="{% static 'assets/img/icons/socialHeader/pt.svg' %}"
+                                                     alt="pt.svg">
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a class="menu-link" href="#">
+                                                <img src="{% static 'assets/img/icons/socialHeader/mail.svg' %}"
+                                                     alt="mail.svg">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <nav class="row-block">
+                            <div class="row ControlPanel-rowSplit">
+                                <div class="row-block">
+                                    {% if user.is_authenticated %}
+                                        <a class="ControlPanel-title" href="{% url 'auth_app:logout' %}">{% trans 'Sign out' %}</a>
+                                    {% else %}
+                                        <a class="ControlPanel-title" href="{% url 'auth_app:login' %}">{% trans 'Sign in' %}</a>
+                                        <a class="ControlPanel-title" href="{% url 'auth_app:register' %}">{% trans 'Register' %}</a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap">
+                <div class="row Header-rowMain">
+                    <div class="row-block Header-logo">
+                        <a class="logo" href="{% url 'home' %}">
+                            <img class="logo-image"
+                                 src="{% static 'assets/img/logo.png' %}"
+                                 alt="logo.png" />
+                        </a>
+                    </div>
+                    <nav class="row-block row-block_right Header-menu">
+                        <div class="menuModal" id="navigate">
+                            <ul class="menu menu_main">
+                                <li class="menu-item">
+                                    <a class="menu-link" href="{% url 'home' %}">{% trans 'Home' %}</a>
+                                </li>
+                                <li class="menu-item menu-item-custom">
+                                    <a class="menu-link" href="{% url 'about' %}">{% trans 'About' %}</a>
+                                </li>
+                                <li class="menu-item">
+                                    <span class="menu-label menu-label_success">{% trans 'Sales' %}</span><a class="menu-link" href="{% url 'catalog' %}">{% trans 'Catalog' %}</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="{% url 'comparison' %}">{% trans 'Comparison' %}</a>
+                                </li>
+                                {% if request.user.is_authenticated %}
+                                    <li class="menu-item">
+                                        <a class="menu-link"
+                                           href="{% url 'viewed_products' user_id=request.user.id %}">{% trans 'Viewed' %}</a>
+                                    </li>
+                                {% endif %}
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="row-block">
+                        <div class="CartBlock">
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                    <img class="CartBlock-img"
+                                         src="{% static 'assets/img/icons/loon-icon.svg' %}"
+                                         alt="loon-icon.svg" />
+                                </button>
+                                <div class="dropdown-content">
+                                    <a class="dropdown-content-a" href="{% url 'account' %}">{% trans 'Account' %}</a>
+                                    {% if user.is_superuser %}
+                                        <a class="dropdown-content-a" href="{% url 'setup-admin' %}">{% trans 'Admin tools' %}</a>
+                                    {% endif %}
+                                    <a class="dropdown-content-a" href="{% url 'auth_app:logout' %}">{% trans 'Sign out' %}</a>
+                                </div>
+                            </div>
+                            {% include 'includes/card_edit.html' %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-block Header-trigger">
+                <a class="menuTrigger" href="#navigate">
+                    <div class="menuTrigger-content">{% trans 'Show navigation' %}</div>
+                    <span></span><span></span><span></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="Header-searchWrap">
+        <div class="wrap">
+            <div class="Header-categories">
+                <div class="CategoriesButton">
+                    <div class="CategoriesButton-title">
+                        <div class="CategoriesButton-icon">
+                            <img src="{% static 'assets/img/icons/allDep.svg' %}" alt="allDep.svg">
+                        </div>
+                        <span class="CategoriesButton-text">{% trans 'All categories' %}</span>
+                        <div class="CategoriesButton-arrow"></div>
+                    </div>
+                    <div class="CategoriesButton-content">
+                        {% if category_list %}
+                        {% for category in category_list %}
+                            <form action="{% url 'catalog' %}" method="get">
+                                <div class="CategoriesButton-link">
+                                    {% if category.title != 'Скидки' %}
+                                        <button class="btn-as-link"
+                                                href="{% url 'catalog' %}"
+                                                name="category"
+                                                value="{{ category.id }}">
+                                        {% else %}
+                                            <a href="{% url 'sale' %}">
+                                            {% endif %}
+                                            <div class="CategoriesButton-icon">
+                                                <img src="{{ category.image.url }}" alt="1.svg">
+                                            </div>
+                                            <span class="CategoriesButton-text">{{ category.title }}</span>
+                                        </a>
+                                    </button>
+                                    {% if category.characteristictype_set.exists %}
+                                        <a class="CategoriesButton-arrow" href="#"></a>
+                                        <div class="CategoriesButton-submenu">
+                                            {% for char in category.characteristictype_set.all %}
+                                                <button class="subbtn-as-link"
+                                                        href="{% url 'catalog' %}"
+                                                        name="char"
+                                                        value="{{ char.id }}">
+                                                    <span class="CategoriesButton-text">{{ char.name }}</span>
+                                                </button>
+                                            {% endfor %}
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </form>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <div class="Header-searchLink">
+                <img src="{% static 'assets/img/icons/search.svg' %}" alt="search.svg">
+            </div>
+            <div class="Header-search">
+                <div class="search">
+                    <form class="form form_search" action="{% url 'catalog' %}" method="get">
+                        <input class="search-input"
+                               id="query"
+                               name="title"
+                               type="text"
+                               placeholder="NVIDIA GeForce RTX 3060">
+                        <button class="search-button" id="search" type="submit" name="search">
+                            <img src="{% static 'assets/img/icons/search.svg' %}" alt="search.svg">
+                            {% trans 'Search' %}
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% block content_header_slyder %}
+    {% endblock content_header_slyder %}
+</header>
+{% block content_body %}
+{% endblock content_body %}
+<footer class="Footer">
+    <div class="wrap">
+        <div class="row Footer-main">
+            <div class="row-block">
+                <a class="logo Footer-logo" href="{% url 'home' %}">
+                    <img class="logo-image"
+                         src="{% static 'assets/img/logo_footer.png' %}"
+                         alt="logo_footer.png">
+                </a>
+            </div>
+            <div class="row-block">
+                <strong class="Footer-title">{% trans 'Navigation' %}</strong>
+                <ul class="menu menu_vt Footer-menu">
+                    <li class="menu-item">
+                        <a class="menu-link" href="{% url 'home' %}">{% trans 'Home' %}</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="{% url 'catalog' %}">{% trans 'Catalog' %}</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="{% url 'comparison' %}">{% trans 'Comparison' %}</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="{% url 'account' %}">{% trans 'Account' %}</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row-block">
+                <strong class="Footer-title">{% trans 'Contacts' %}</strong>
+                <p>
+                    {% trans 'Phone' %}: 8.800.200.600
+                    <br>
+                    {% trans 'Email' %}: xxx@meg.com
+                    <br>
+                </p>
+                <ul class="menu menu_img menu_smallImg Footer-menuSoc">
+                    <li class="menu-item">
+                        <a class="menu-link" href="#">
+                            <img src="{% static 'assets/img/icons/socialFooter/fb.svg' %}"
+                                 alt="fb.svg">
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="#">
+                            <img src="{% static 'assets/img/icons/socialFooter/tw.svg' %}"
+                                 alt="tw.svg">
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="#">
+                            <img src="{% static 'assets/img/icons/socialFooter/in.svg' %}"
+                                 alt="in.svg">
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="#">
+                            <img src="{% static 'assets/img/icons/socialFooter/pt.svg' %}"
+                                 alt="pt.svg">
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="#">
+                            <img src="{% static 'assets/img/icons/socialFooter/mail.svg' %}"
+                                 alt="mail.svg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="{% static '/assets/plg/jQuery/jquery-3.7.0.min.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
+<script src="{% static 'assets/plg/form/jquery.form.js' %}"></script>
+<script src="{% static 'assets/plg/form/jquery.maskedinput.min.js' %}"></script>
+<script src="{% static 'assets/plg/range/ion.rangeSlider.min.js' %}"></script>
+<script src="{% static 'assets/plg/Slider/slick.min.js' %}"></script>
+<script src="{% static 'assets/js/comparison.js' %}"></script>
+<script src="{% static 'assets/js/scripts.js' %}"></script>
+<script src="{% static 'assets/js/phone.js' %}"></script>
+
+{% block script %}
+{% endblock script %}
+</body>
+</html>

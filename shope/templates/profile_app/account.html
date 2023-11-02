@@ -1,0 +1,60 @@
+{% extends 'core/base.html' %}
+{% load i18n %}
+{% load static %}
+{% load core_tags %}
+{% block content_body %}
+    <div class="Middle Middle_top">
+        <div class="Section Section_column Section_columnLeft">
+            <div class="wrap">
+                <div class="Section-column">
+                    <div class="Section-columnSection">
+                        <header class="Section-header">
+                            <strong class="Section-title">{% trans "Navigation" %}</strong>
+                        </header>
+                        <div class="Section-columnContent">
+                            <div class="NavigateProfile">
+                                <ul class="menu menu_vt">
+                                    <li class="menu-item_ACTIVE menu-item">
+                                        <a class="menu-link" href="{% url 'account' %}">{% trans "Dashboard" %}</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="{% url 'profile' %}">{% trans "Profile" %}</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="{% url 'order_app:history-order' %}">{% trans "History" %}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Section-content">
+                    <div class="Account">
+                        <div class="Account-group">
+                            <div class="Account-column">
+                                {% if profile.avatar %}
+                                    <div class="Account-avatar">
+                                        <img src="{{ profile.avatar.url }}" />
+                                    </div>
+                                {% endif %}
+                            </div>
+                            <div class="Account-column">
+                                <div class="Account-name">{{ request.user.middle_name }}</div>
+                                <a class="Account-editLink" href="{% url 'profile' %}">{% trans "Edit" %}</a>
+                            </div>
+                        </div>
+                        <div class="Account-group">
+                            <div class="Account-column Account-column_full">
+                                {% if last_order %}
+                                    {% get_order last_order %}
+                                {% else %}
+                                    {% trans "You haven't had orders yet" %}
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content_body %}

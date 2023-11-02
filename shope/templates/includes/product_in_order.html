@@ -1,0 +1,21 @@
+<div class="Cart-product">
+    <div class="Cart-block Cart-block_row">
+        <div class="Cart-block Cart-block_pict">
+            <a class="Cart-pict" href="{% url "product" i_item.product.pk %}">
+                <img class="Cart-img"
+                     src="{{ i_item.product.image.first.image.url }}"
+                     alt="{{ i_item.product.image.first }}" />
+            </a>
+        </div>
+        <div class="Cart-block Cart-block_info">
+            <a class="Cart-title" href="{% url "product" i_item.product.pk %}">{{ i_item.product.title }}</a>
+            <div class="Cart-desc">{{ i_item.product.name }}</div>
+        </div>
+        <div class="Cart-block Cart-block_price">
+            <div class="Cart-price">{{ i_item.amount }}</div>
+        </div>
+    </div>
+    <div class="Cart-block Cart-block_row">
+        <div class="Cart-block Cart-block_amount">{{ i_item.count }}</div>
+    </div>
+</div>

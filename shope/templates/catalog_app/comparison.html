@@ -1,0 +1,111 @@
+{% extends 'core/base.html' %}
+{% load i18n %}
+{% load static %}
+
+
+{% block content_body %}
+<div class="Middle">
+  <div class="wrap">
+    <div class="Product">
+      <div class="ProductCard">
+        {% for product in compare_list %}
+        <div class="ProductCard-desc">
+          <div class="ProductCard-header">
+            <h2 class="ProductCard-title ProductCard-title-custom">{{ product.product.title }}
+            </h2>
+            <div class="ProductCard-look">
+              <div class="ProductCard-photo ProductCard-photo-custom">
+                <img src="{{ product.product.image.all.0.image.url }}" alt="bigGoods.png">
+              </div>
+              <form class="Card-btn delete-btn" action="{% url 'comparison' %}" method="post" >
+                {% csrf_token %}
+                <button class="Card-btn btn_reset compare_btn" type="submit">
+                  <input class="visually-hidden" name="compare_id" value="{{ product.id }}">
+                  <div class="ProductCard-cartElement">
+                    <a class="Card-btn" href="#">
+                      <img src="{% static 'assets/img/icons/card/delete.svg' %}" alt="cart.svg">
+                    </a>
+                  </div>
+                </button>
+              </form>
+            </div>
+
+            <div class="Tabs Tabs_default">
+              <div class="Tabs-wrap">
+                <div class="Tabs-block" id="description">
+                  <div class="table">
+                    <table class="tableSection">
+                      <tr>
+                        <th class="hed">{% trans 'Characteristic' %}</th>
+                        <th class="hed">{% trans 'Value' %}</th>
+                      </tr>
+                      <tr>
+                        <td><b>{% trans 'General parameters' %}</b></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td class="comparis">{% trans 'Type' %}</td>
+                        <td class="comparis">{{ product.product.category.title }}</td>
+                      </tr>
+                      <tr class="table-line-custom" >
+                        <td class="">{% trans 'Model' %}</td>
+                        <td class="tableSection">{{ product.product.name }}</td>
+                      </tr>
+
+                      {% for char in product.product.category.characteristictype_set.all %}
+
+                        <tr>
+                          <td>{{ char.name }}</td>
+                          {% for value in product.product.characteristics.all %}
+                            {% if char.id == value.characteristic_value.characteristic_type.id%}
+                              <td>{{ value.characteristic_value.value }}</td>
+                            {% endif %}
+                          {% endfor %}
+                        </tr>
+
+                      {% endfor %}
+
+                    </table>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="ProductCard-info">
+            <div class="ProductCard-cost">
+              <div class="ProductCard-price">
+                {% for object in price_seller_list %}
+                  {% if object.product_id == product.product.id %}
+                    {{ object.price }}₽
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          <div class="ProductCard-cart">
+
+            <div class="ProductCard-cartElement" id="cart-add">
+              {% for object in price_seller_list %}
+              {% if object.product_id == product.product.id %}
+              <a class="btn btn_primary" data-product="{{product.id}}" data-seller="{{ object.seller }}" data-name="{{product.product.title}}" data-value="{{object.price}}" data-image="{{ product.product.image.all.0.image.url }}">
+                <img class="btn-icon" src="{% static '/assets/img/icons/card/cart_white.svg' %}" alt="cart_white.svg">
+                <span class="btn-content">{% trans 'Add to Cart' %}</span>
+              </a>
+              {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content_body%}
+
+{% block script %}
+    <script src="{% static '/assets/js/add_to_cart.js' %}"></script>
+{% endblock script %}

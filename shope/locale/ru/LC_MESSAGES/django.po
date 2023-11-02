@@ -1,0 +1,1198 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-01 09:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: auth_app/forms.py:19
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: auth_app/forms.py:20 auth_app/forms.py:63 profile_app/forms.py:13
+#: templates/core/base.html:262
+msgid "Email"
+msgstr "Почта"
+
+#: auth_app/forms.py:21 templates/catalog_app/catalog.html:40
+msgid "Name"
+msgstr "Имя"
+
+#: auth_app/forms.py:22
+msgid "last_name"
+msgstr "Фамилия"
+
+#: auth_app/forms.py:23 templates/profile_app/profileAvatar.html:87
+msgid "Password"
+msgstr "Пароль"
+
+#: auth_app/forms.py:24
+msgid "Repeat password"
+msgstr "Повторите пароль"
+
+#: auth_app/forms.py:43
+msgid "e-mail"
+msgstr "Почта"
+
+#: auth_app/forms.py:76
+msgid "Set new password"
+msgstr "Введите новый пароль"
+
+#: auth_app/forms.py:77
+msgid "Repeat new password"
+msgstr "Повторите новый пароль"
+
+#: auth_app/models.py:13 cart_app/models.py:16 catalog_app/models.py:233
+#: core/models/seller.py:14 order_app/models.py:16 profile_app/models.py:34
+msgid "user"
+msgstr "пользователь"
+
+#: auth_app/models.py:14
+msgid "users"
+msgstr "пользователи"
+
+#: auth_app/models.py:21 profile_app/forms.py:22
+#: templates/order_app/oneorder.html:28
+msgid "Full name"
+msgstr "Полное имя"
+
+#: auth_app/views.py:124
+msgid "The password was changed successfully. You can login"
+msgstr "Пароль был успешно изменен. Вы можете авторизоваться."
+
+#: cart_app/models.py:20 templates/catalog_app/product.html:153
+msgid "Cart"
+msgstr "Корзина"
+
+#: cart_app/models.py:21
+#, fuzzy
+#| msgid "Cart"
+msgid "Carts"
+msgstr "Корзины"
+
+#: cart_app/models.py:32
+msgid "discount"
+msgstr "скидка"
+
+#: cart_app/models.py:34
+msgid "amount with discount"
+msgstr "сумма со скидкой"
+
+#: cart_app/models.py:37
+msgid "cart"
+msgstr "корзина"
+
+#: cart_app/models.py:41
+msgid "CartItem"
+msgstr "Предмет корзины"
+
+#: cart_app/models.py:42
+#, fuzzy
+#| msgid "CartItem"
+msgid "CartItems"
+msgstr "Предметы корзины"
+
+#: cart_app/views.py:74
+msgid "Select the number of products"
+msgstr "Выберите количество продуктов"
+
+#: cart_app/views.py:82
+msgid "The product has been added to the cart"
+msgstr "Товар был добавлен в корзину"
+
+#: cart_app/views.py:89
+msgid "Something went wrong"
+msgstr "Что-то пошло не так..."
+
+#: catalog_app/form.py:28 templates/catalog_app/product.html:181
+msgid "Review"
+msgstr "Отзыв"
+
+#: catalog_app/models.py:13 catalog_app/models.py:47
+msgid "title"
+msgstr "заголовок"
+
+#: catalog_app/models.py:19 catalog_app/models.py:34 catalog_app/models.py:40
+#: catalog_app/models.py:50 catalog_app/models.py:72 catalog_app/models.py:86
+#: catalog_app/models.py:99 catalog_app/models.py:114 catalog_app/models.py:130
+msgid "image"
+msgstr "изображение"
+
+#: catalog_app/models.py:27 catalog_app/models.py:53 catalog_app/models.py:85
+#: catalog_app/models.py:101 catalog_app/models.py:173
+msgid "category"
+msgstr "категория"
+
+#: catalog_app/models.py:28
+msgid "categories"
+msgstr "категории"
+
+#: catalog_app/models.py:41
+msgid "images"
+msgstr "изображения"
+
+#: catalog_app/models.py:48 catalog_app/models.py:71
+#: core/models/base_discount.py:16
+msgid "description"
+msgstr "описание"
+
+#: catalog_app/models.py:49 catalog_app/models.py:167 core/models/seller.py:9
+msgid "name"
+msgstr "название"
+
+#: catalog_app/models.py:52
+msgid "number_of_sales"
+msgstr "количество_продаж"
+
+#: catalog_app/models.py:54
+msgid "limited"
+msgstr "лимитировано"
+
+#: catalog_app/models.py:55
+msgid "delivery"
+msgstr "доставка"
+
+#: catalog_app/models.py:61 catalog_app/models.py:69 catalog_app/models.py:100
+#: catalog_app/models.py:149 catalog_app/models.py:211
+#: catalog_app/models.py:234 catalog_app/models.py:248
+#: core/models/base_item.py:14 core/models/price.py:13
+msgid "product"
+msgstr "товар"
+
+#: catalog_app/models.py:62
+msgid "products"
+msgstr "товары"
+
+#: catalog_app/models.py:78
+msgid "slider"
+msgstr "слайдер"
+
+#: catalog_app/models.py:79
+msgid "sliders"
+msgstr "слайдеры"
+
+#: catalog_app/models.py:92
+msgid "banner"
+msgstr "баннер"
+
+#: catalog_app/models.py:93
+msgid "banners"
+msgstr "баннеры"
+
+#: catalog_app/models.py:107
+msgid "product discount"
+msgstr "скидка товара"
+
+#: catalog_app/models.py:108
+msgid "product discounts"
+msgstr "скидки товара"
+
+#: catalog_app/models.py:115
+msgid "category as group of products"
+msgstr "категория как группа продуктов"
+
+#: catalog_app/models.py:116
+msgid "fixed amount of discount"
+msgstr "фиксированная сумма скидки"
+
+#: catalog_app/models.py:117
+msgid "fixed amount of price"
+msgstr "фиксированная сумма цены"
+
+#: catalog_app/models.py:123
+msgid "group of product discount"
+msgstr "группа скидки товара"
+
+#: catalog_app/models.py:124
+msgid "group of product discounts"
+msgstr "группа скидок товара"
+
+#: catalog_app/models.py:132
+msgid "amount of products for a success discount"
+msgstr "сумма товаров для успешной скидки"
+
+#: catalog_app/models.py:134
+msgid "quantity of products for a success discount"
+msgstr "количество товаров для успешной скидки"
+
+#: catalog_app/models.py:140
+msgid "cart discount"
+msgstr "скидка корзины"
+
+#: catalog_app/models.py:141
+msgid "cart discounts"
+msgstr "скидки корзины"
+
+#: catalog_app/models.py:147
+msgid "author"
+msgstr "автор"
+
+#: catalog_app/models.py:148
+msgid "text"
+msgstr "текст"
+
+#: catalog_app/models.py:155
+msgid "rewiew"
+msgstr "отзыв"
+
+#: catalog_app/models.py:156 templates/catalog_app/product.html:100
+msgid "reviews"
+msgstr "отзывы"
+
+#: catalog_app/models.py:178
+msgid "type characteristic of product"
+msgstr "тип характеристики продукта"
+
+#: catalog_app/models.py:179
+msgid "types characteristic of product"
+msgstr "типы характеристик продукта"
+
+#: catalog_app/models.py:190
+msgid "type of characteristic"
+msgstr "тип характеристики"
+
+#: catalog_app/models.py:193
+msgid "value"
+msgstr "значение"
+
+#: catalog_app/models.py:199
+msgid "characteristic value"
+msgstr "значение характеристики"
+
+#: catalog_app/models.py:200
+msgid "characteristic values"
+msgstr "значения характеристики"
+
+#: catalog_app/models.py:217
+msgid "value of characteristic"
+msgstr "значение характеристики"
+
+#: catalog_app/models.py:223
+msgid "characteristic of product"
+msgstr "характеристика продукта"
+
+#: catalog_app/models.py:224
+msgid "characteristics of product"
+msgstr "характеристики продукта"
+
+#: catalog_app/models.py:240
+msgid "viewed product"
+msgstr "просмотренный товар"
+
+#: catalog_app/models.py:241
+msgid "viewed products"
+msgstr "просмотренные товары"
+
+#: catalog_app/models.py:247
+msgid "session key"
+msgstr "ключ сессии"
+
+#: catalog_app/models.py:254
+msgid "product for comparison"
+msgstr "продукт для сравнения"
+
+#: catalog_app/models.py:255
+msgid "products for comparison"
+msgstr "продукты для сравнения"
+
+#: catalog_app/views.py:225
+msgid "Too much products to the comparison!"
+msgstr "Слишком много продуктов для сравнения!"
+
+#: catalog_app/views.py:228
+msgid "The product was already added!"
+msgstr "Продукт уже был добавлен!"
+
+#: catalog_app/views.py:232
+msgid "The product have no common characteristics!"
+msgstr "Продукты не имеют общих характеристик!"
+
+#: catalog_app/views.py:235
+msgid "The product has been added to the comparison!"
+msgstr "Продукт был добавлен в сравнение!"
+
+#: core/enums/delivery_type_enum.py:10
+msgid "express delivery"
+msgstr "быстрая доставка"
+
+#: core/enums/delivery_type_enum.py:11
+msgid "regular delivery"
+msgstr "обычная доставка"
+
+#: core/enums/order_status_enum.py:10
+msgid "is not paid"
+msgstr "не оплачено"
+
+#: core/enums/order_status_enum.py:11
+msgid "is paid"
+msgstr "оплачено"
+
+#: core/enums/order_status_enum.py:12
+msgid "is delivered"
+msgstr "доставлено"
+
+#: core/enums/order_status_enum.py:13
+msgid "is closed"
+msgstr "закрыто"
+
+#: core/enums/pay_type_enum.py:10
+msgid "bank card"
+msgstr "банковская карта"
+
+#: core/enums/pay_type_enum.py:11
+msgid "spb"
+msgstr "спб"
+
+#: core/forms.py:11 templates/catalog_app/comparison.html:40
+#: ⁨templates/catalog_app/product copy.html⁩:126
+#: templates/catalog_app/product.html:115
+msgid "Value"
+msgstr "Значение"
+
+#: core/models/base_discount.py:11
+msgid "discount name"
+msgstr "имя скидки"
+
+#: core/models/base_discount.py:12
+msgid "priority"
+msgstr "приоритет"
+
+#: core/models/base_discount.py:13
+msgid "sale value"
+msgstr "значение скидки"
+
+#: core/models/base_discount.py:14
+msgid "date of discount start"
+msgstr "дата начала скидки"
+
+#: core/models/base_discount.py:15
+msgid "date of discount end"
+msgstr "дата окончания скидки"
+
+#: core/models/base_item.py:15 core/models/price.py:16 core/models/seller.py:20
+msgid "seller"
+msgstr "продавец"
+
+#: core/models/base_item.py:16
+msgid "count product"
+msgstr "количество продуктов"
+
+#: core/models/base_item.py:17
+msgid "amount"
+msgstr "сумма"
+
+#: core/models/base_model.py:7
+msgid "creation time"
+msgstr "дата создания"
+
+#: core/models/base_model.py:8
+msgid "updated time"
+msgstr "дата обновления"
+
+#: core/models/base_model.py:9
+msgid "active"
+msgstr "активный"
+
+#: core/models/cache_setup.py:9
+msgid "cache key"
+msgstr "ключ кэша"
+
+#: core/models/cache_setup.py:12
+msgid "cache value"
+msgstr "значение кэша"
+
+#: core/models/price.py:10
+msgid "product's price"
+msgstr "цена продукта"
+
+#: core/models/price.py:24
+msgid "price"
+msgstr "цена"
+
+#: core/models/price.py:25
+msgid "prices"
+msgstr "цены"
+
+#: core/models/seller.py:21
+msgid "sellers"
+msgstr "продавцы"
+
+#: core/utils/exception.py:10
+msgid "The value of discount is more than the maximum! Max value is 99"
+msgstr ""
+"Значение скидки больше допустимого! Максимально допустимое значение - 99"
+
+#: core/utils/exception.py:23
+msgid "The value of discount is less than the minimum! Min value is 0"
+msgstr "Значение скидки меньше допустимого! Минимальное значение - 0"
+
+#: core/utils/product_discount.py:45
+msgid "Discount on the shopping cart has been applied! Benefit "
+msgstr "Скидка на корзину была применена! Выгода "
+
+#: core/utils/product_discount.py:54
+msgid "The discount on the product has been applied! Benefit "
+msgstr "Скидка на товар была применена! Выгода "
+
+#: core/views.py:87
+msgid "The cache has been cleared"
+msgstr "Кжш был очищен"
+
+#: order_app/forms.py:12 templates/order_app/oneorder.html:46
+msgid "City"
+msgstr "Город"
+
+#: order_app/forms.py:19 templates/order_app/oneorder.html:50
+msgid "Address"
+msgstr "Адрес"
+
+#: order_app/forms.py:26 ⁨templates/catalog_app/product copy.html⁩:154
+#: ⁨templates/catalog_app/product copy.html⁩:187
+#: ⁨templates/catalog_app/product copy.html⁩:220
+msgid "Delivery type"
+msgstr "Тип доставки"
+
+#: order_app/forms.py:33
+msgid "Pay type"
+msgstr "Тип оплаты"
+
+#: order_app/models.py:20
+msgid "city"
+msgstr "город"
+
+#: order_app/models.py:23
+msgid "address"
+msgstr "адрес"
+
+#: order_app/models.py:26
+msgid "payment type"
+msgstr "тип оплаты"
+
+#: order_app/models.py:32
+msgid "delivery type"
+msgstr "тип доставки"
+
+#: order_app/models.py:38
+msgid "status"
+msgstr "статус"
+
+#: order_app/models.py:44
+msgid "order amount"
+msgstr "сумма заказа"
+
+#: order_app/models.py:53 order_app/models.py:59 order_app/models.py:70
+msgid "order"
+msgstr "заказ"
+
+#: order_app/models.py:54
+msgid "orders"
+msgstr "заказы"
+
+#: order_app/models.py:61 templates/core/product_supply.html:59
+msgid "from"
+msgstr "от"
+
+#: order_app/models.py:75
+msgid "OrderItem"
+msgstr "Предмет заказа"
+
+#: profile_app/forms.py:41 templates/core/base.html:260
+#: templates/order_app/oneorder.html:32
+msgid "Phone"
+msgstr "Телефон"
+
+#: profile_app/forms.py:50 templates/profile_app/profileAvatar.html:51
+msgid "Avatar"
+msgstr "Аватарка"
+
+#: profile_app/forms.py:69
+msgid "New password"
+msgstr "Новый пароль"
+
+#: profile_app/forms.py:75
+msgid "You can change your password"
+msgstr "Вы можете изменить свой пароль"
+
+#: profile_app/forms.py:79 profile_app/forms.py:85
+#: templates/profile_app/profileAvatar.html:95
+msgid "Confirm password"
+msgstr "Подтвердите пароль"
+
+#: profile_app/models.py:22
+msgid "phone"
+msgstr "телефон"
+
+#: profile_app/models.py:28
+msgid "avatar"
+msgstr "аватарка"
+
+#: profile_app/models.py:42
+msgid "user's profile"
+msgstr "профиль пользователя"
+
+#: profile_app/models.py:43
+msgid "user's profiles"
+msgstr "профили пользователей"
+
+#: profile_app/views.py:28
+msgid "Your profile has been updated"
+msgstr "Ваш профиль был обновлен"
+
+#: repositories/discount_product_group_repositories.py:70
+msgid "Discount successfully applied"
+msgstr "Скидка была успешно применена"
+
+#: repositories/discount_product_group_repositories.py:79
+msgid "To get a discount, add an item from the category "
+msgstr "Чтобы получить скидку, добавьте предмет из нужной категории "
+
+#: shope/settings.py:165
+msgid "English"
+msgstr "Английский"
+
+#: shope/settings.py:166
+msgid "Russian"
+msgstr "Русский"
+
+#: templates/auth_app/base-auth.html:10 templates/core/base.html:6
+msgid "Megano"
+msgstr "Мегано"
+
+#: templates/auth_app/base-auth.html:54 templates/auth_app/e-mail.html:20
+#: templates/auth_app/login.html:7 templates/auth_app/login.html:14
+#: templates/auth_app/registr.html:76 templates/core/base.html:84
+msgid "Sign in"
+msgstr "Войти"
+
+#: templates/auth_app/base-auth.html:55 templates/auth_app/login.html:18
+#: templates/auth_app/registr.html:8 templates/cart_app/cart.html:20
+msgid "Registration"
+msgstr "Регистрация"
+
+#: templates/auth_app/base-auth.html:82 templates/core/base.html:241
+#: templates/includes/navbar-profile1.html:7
+#: templates/order_app/historyorder.html:12
+#: templates/profile_app/account.html:12 templates/profile_app/profile.html:11
+#: templates/profile_app/profileAvatar.html:25
+msgid "Navigation"
+msgstr "Навигация"
+
+#: templates/auth_app/base-auth.html:85
+#: templates/catalog_app/product_viewed.html:12
+#: templates/catalog_app/sale.html:12 templates/catalog_app/sale_detail.html:12
+#: templates/core/about.html:14 templates/core/base.html:106
+#: templates/core/base.html:244 templates/profile_app/profileAvatar.html:11
+msgid "Home"
+msgstr "Главная"
+
+#: templates/auth_app/base-auth.html:87 templates/core/base.html:112
+#: templates/core/base.html:247
+msgid "Catalog"
+msgstr "Каталог"
+
+#: templates/auth_app/base-auth.html:89 templates/core/base.html:115
+#: templates/core/base.html:250
+msgid "Comparison"
+msgstr "Сравнение"
+
+#: templates/auth_app/base-auth.html:91
+#: templates/includes/navbar-profile1.html:16
+#: templates/order_app/historyorder.html:21
+#: templates/profile_app/account.html:21 templates/profile_app/profile.html:20
+#: templates/profile_app/profileAvatar.html:8
+#: templates/profile_app/profileAvatar.html:14
+#: templates/profile_app/profileAvatar.html:34
+msgid "Profile"
+msgstr "Профиль"
+
+#: templates/auth_app/base-auth.html:97 templates/core/base.html:258
+msgid "Contacts"
+msgstr "Контакты"
+
+#: templates/auth_app/base-auth.html:99
+#: templates/profile_app/profileAvatar.html:71
+msgid "Telephone"
+msgstr "Телефон"
+
+#: templates/auth_app/base-auth.html:99
+#: templates/profile_app/profileAvatar.html:79
+msgid "E-mail"
+msgstr "Почта"
+
+#: templates/auth_app/change_password_error.html:5
+msgid "Something went wrong while resetting your password"
+msgstr "Что-то пошло не так в ходе сброса пароля"
+
+#: templates/auth_app/change_password_success.html:5
+msgid "Go to your email to continue resetting your password."
+msgstr "Перейдите на почту, чтобы продолжить сброс пароля."
+
+#: templates/auth_app/confirm-email.html:5
+msgid "Please, go to your email and confirm it to continue the registration"
+msgstr ""
+"Пожалуйста, перейдите на почту и подтвердите ее, чтобы продолжить регистрацию"
+
+#: templates/auth_app/e-mail.html:7
+msgid "Password recovery (1/2)"
+msgstr "Восстановление пароля (1/2)"
+
+#: templates/auth_app/e-mail.html:8
+msgid ""
+"To recover your password, enter the email address you registered your "
+"account with"
+msgstr ""
+"Чтобы сбросить пароль перейдите на почту, на которую зарегистрирован Ваш "
+"аккаунт"
+
+#: templates/auth_app/e-mail.html:17
+msgid "Get verification code"
+msgstr "Получить проверочный код"
+
+#: templates/auth_app/login.html:16
+msgid "Forgot your password?"
+msgstr "Забыли пароль?"
+
+#: templates/auth_app/password_reset.html:7
+msgid "Password recovery (2/2)"
+msgstr "Восстановление пароля (2/2)"
+
+#: templates/auth_app/password_reset.html:8
+msgid "Set a new password to your account"
+msgstr "Установите новый пароль на Ваш аккаунт"
+
+#: templates/auth_app/password_reset.html:20
+#, fuzzy
+#| msgid "New password"
+msgid "Save password"
+msgstr "Сохранить пароль"
+
+#: templates/auth_app/registr.html:71 templates/core/base.html:85
+msgid "Register"
+msgstr "Зарегистрироваться"
+
+#: templates/auth_app/registration-error.html:5
+msgid "Something went wrong during registration..."
+msgstr "Что-то пошло не так в ходе регистрации..."
+
+#: templates/auth_app/verify-email.html:5
+msgid "You successfully confirmed your email!"
+msgstr "Вы успешно подтвердили свой пароль!"
+
+#: templates/cart_app/cart.html:16 templates/includes/order-information.html:6
+#: templates/order_app/oneorder.html:10
+#: venv/lib/python3.11/site-packages/django/forms/formsets.py:484
+#: venv/lib/python3.11/site-packages/django/forms/formsets.py:491
+msgid "Order"
+msgstr "Заказ"
+
+#: templates/catalog_app/catalog.html:14 templates/catalog_app/catalog.html:62
+msgid "Filter"
+msgstr "Фильтр"
+
+#: templates/catalog_app/catalog.html:30 templates/catalog_app/catalog.html:93
+#: templates/catalog_app/product.html:156
+msgid "Price"
+msgstr "Цена"
+
+#: templates/catalog_app/catalog.html:49
+msgid "Only products in stock"
+msgstr "Только продукты в наличии"
+
+#: templates/catalog_app/catalog.html:56
+msgid "With free delivery"
+msgstr "С бесплатной доставкой"
+
+#: templates/catalog_app/catalog.html:70
+msgid "Popular tags"
+msgstr "Популярные теги"
+
+#: templates/catalog_app/catalog.html:87
+msgid "Sort by:"
+msgstr "Сортировать по:"
+
+#: templates/catalog_app/catalog.html:91
+msgid "Popularity"
+msgstr "Популярности"
+
+#: templates/catalog_app/catalog.html:95
+#: ⁨templates/catalog_app/product copy.html⁩:98
+msgid "Reviews"
+msgstr "Отзывам"
+
+#: templates/catalog_app/catalog.html:97
+msgid "Novelty"
+msgstr "Новизне"
+
+#: templates/catalog_app/catalog.html:183
+msgid "There are no products matching your request."
+msgstr "Нет продуктов, удовлетворяющих Ваш запрос"
+
+#: templates/catalog_app/comparison.html:39
+#: ⁨templates/catalog_app/product copy.html⁩:95
+#: ⁨templates/catalog_app/product copy.html⁩:125
+#: templates/catalog_app/product.html:114
+msgid "Characteristic"
+msgstr "Характеристика"
+
+#: templates/catalog_app/comparison.html:43
+msgid "General parameters"
+msgstr "Общие параметры"
+
+#: templates/catalog_app/comparison.html:47
+msgid "Type"
+msgstr "Тип"
+
+#: templates/catalog_app/comparison.html:51
+msgid "Model"
+msgstr "Модель"
+
+#: templates/catalog_app/comparison.html:94
+msgid "Add to Cart"
+msgstr "Добавить в корзину"
+
+#: ⁨templates/catalog_app/product copy.html⁩:35
+msgid "Barand New Phone Smart Busines"
+msgstr "Баранд новый умный телефон"
+
+#: ⁨templates/catalog_app/product copy.html⁩:62
+#: ⁨templates/catalog_app/product copy.html⁩:148
+#: ⁨templates/catalog_app/product copy.html⁩:181
+#: templates/catalog_app/product.html:57 templates/catalog_app/product.html:142
+msgid "Buy"
+msgstr "Купить"
+
+#: ⁨templates/catalog_app/product copy.html⁩:69
+#: templates/catalog_app/product.html:64
+msgid "Congratulations"
+msgstr "Поздравления"
+
+#: ⁨templates/catalog_app/product copy.html⁩:73
+msgid "The product was successfully added to cart!"
+msgstr "Продукт был успешно добавлен в корзину!"
+
+#: ⁨templates/catalog_app/product copy.html⁩:81
+#: templates/catalog_app/product.html:76
+msgid "Tags"
+msgstr "Теги"
+
+#: ⁨templates/catalog_app/product copy.html⁩:81
+msgid "Accessories"
+msgstr "Аксессуары"
+
+#: ⁨templates/catalog_app/product copy.html⁩:81
+msgid "Design"
+msgstr "Дизайн"
+
+#: ⁨templates/catalog_app/product copy.html⁩:81
+msgid "Games"
+msgstr "Игры"
+
+#: ⁨templates/catalog_app/product copy.html⁩:89
+#: templates/catalog_app/product.html:91
+msgid "Description"
+msgstr "Описание"
+
+#: ⁨templates/catalog_app/product copy.html⁩:92
+#: templates/catalog_app/product.html:94
+msgid "Sellers"
+msgstr "Продавцы"
+
+#: ⁨templates/catalog_app/product copy.html⁩:103 templates/core/about.html:123
+msgid "Megano Store History"
+msgstr "История магазина Мегано"
+
+#: ⁨templates/catalog_app/product copy.html⁩:129
+msgid "Device type"
+msgstr "Тип устройства"
+
+#: ⁨templates/catalog_app/product copy.html⁩:130
+msgid "Notebook"
+msgstr "Ноутбук"
+
+#: ⁨templates/catalog_app/product copy.html⁩:142
+msgid "Sitilink"
+msgstr "Ситилинк"
+
+#: ⁨templates/catalog_app/product copy.html⁩:155
+#: ⁨templates/catalog_app/product copy.html⁩:188
+#: ⁨templates/catalog_app/product copy.html⁩:191
+#: ⁨templates/catalog_app/product copy.html⁩:221
+#: templates/order_app/order.html:121
+msgid "Regular delivery"
+msgstr "Обычная доставка"
+
+#: ⁨templates/catalog_app/product copy.html⁩:158
+#: ⁨templates/catalog_app/product copy.html⁩:192
+#: ⁨templates/catalog_app/product copy.html⁩:224
+#: templates/catalog_app/product.html:152
+#: templates/includes/order-information.html:18
+#: templates/order_app/oneorder.html:54
+msgid "Payment"
+msgstr "Оплата"
+
+#: ⁨templates/catalog_app/product copy.html⁩:159
+#: ⁨templates/catalog_app/product copy.html⁩:195
+#: ⁨templates/catalog_app/product copy.html⁩:225
+#: templates/order_app/order.html:125
+msgid "Online card"
+msgstr "Оплата картой"
+
+#: ⁨templates/catalog_app/product copy.html⁩:162
+#: ⁨templates/catalog_app/product copy.html⁩:208
+#: ⁨templates/catalog_app/product copy.html⁩:228
+msgid "Cost"
+msgstr "Цена"
+
+#: ⁨templates/catalog_app/product copy.html⁩:175
+msgid "DNS"
+msgstr "ДНС"
+
+#: ⁨templates/catalog_app/product copy.html⁩:214
+msgid "Eldorado"
+msgstr "Эльдорадо"
+
+#: ⁨templates/catalog_app/product copy.html⁩:258
+msgid "1 review"
+msgstr "1 отзыв"
+
+#: ⁨templates/catalog_app/product copy.html⁩:268
+msgid "Alexandra "
+msgstr "Александра "
+
+#: ⁨templates/catalog_app/product copy.html⁩:268
+msgid "Brovina"
+msgstr "Бровина"
+
+#: ⁨templates/catalog_app/product copy.html⁩:278
+msgid "December 25"
+msgstr "25 декабря"
+
+#: ⁨templates/catalog_app/product copy.html⁩:286
+msgid "Add a review"
+msgstr "Добавить отзыв"
+
+#: templates/catalog_app/product.html:65
+msgid "Close the window"
+msgstr "Закрыть окно"
+
+#: templates/catalog_app/product.html:68
+msgid "Product has been added to the cart"
+msgstr "Товар был добавлен в корзину"
+
+#: templates/catalog_app/product.html:97
+msgid "Characteristics"
+msgstr "Характеристики"
+
+#: templates/catalog_app/product.html:148
+#: templates/includes/order-information.html:14
+#: templates/order_app/oneorder.html:42
+msgid "Delivery"
+msgstr "Доставка"
+
+#: templates/catalog_app/product.html:149
+msgid "Custom delivery"
+msgstr "Настраиваемая доставка"
+
+#: templates/catalog_app/product.html:202
+msgid "New review"
+msgstr "Новый отзыв"
+
+#: templates/catalog_app/product.html:213
+msgid "Add"
+msgstr "Добавить"
+
+#: templates/catalog_app/product_viewed.html:14
+msgid "Viewed products"
+msgstr "Просмотренные продукты"
+
+#: templates/catalog_app/sale.html:14 templates/catalog_app/sale_detail.html:14
+#: templates/core/base.html:112
+msgid "Sales"
+msgstr "Скидки"
+
+#: templates/catalog_app/sale_detail.html:16
+msgid "Sale detail"
+msgstr "Детали скидки"
+
+#: templates/catalog_app/sale_detail.html:44
+#, fuzzy
+#| msgid "category as group of products"
+msgid "Category products"
+msgstr "Категория как группа продуктов"
+
+#: templates/core/about.html:11
+msgid "About Megano"
+msgstr "О Мегано"
+
+#: templates/core/about.html:16
+msgid "About us"
+msgstr "О нас"
+
+#: templates/core/about.html:30
+msgid "Shipping & Returns"
+msgstr "Доставка и возврат"
+
+#: templates/core/about.html:32
+msgid "World wide shipping"
+msgstr "Всемирная доставка"
+
+#: templates/core/about.html:42
+msgid "Money Back"
+msgstr "Возврат денег"
+
+#: templates/core/about.html:44
+msgid "Guaranteed payments"
+msgstr "Гарантированные оплаты"
+
+#: templates/core/about.html:54
+msgid "Support Policy"
+msgstr "Политика поддержки"
+
+#: templates/core/about.html:56
+msgid "Fast support team"
+msgstr "Быстрая служба поддержки"
+
+#: templates/core/about.html:66
+msgid "Quality Guarantee"
+msgstr "Гарантия Качества"
+
+#: templates/core/about.html:68
+msgid "Best guaranteed items"
+msgstr "Лучшие гарантированные предметы"
+
+#: templates/core/about.html:75
+msgid "Follow Us"
+msgstr "Подпишись на нас"
+
+#: templates/core/about.html:101
+msgid "Why Choose Megano?"
+msgstr "Почему стоит выбрать Мегано?"
+
+#: templates/core/base.html:82 templates/core/base.html:139
+msgid "Sign out"
+msgstr "Выход"
+
+#: templates/core/base.html:109
+msgid "About"
+msgstr "О сайте"
+
+#: templates/core/base.html:120
+msgid "Viewed"
+msgstr "Просмотрено"
+
+#: templates/core/base.html:135 templates/core/base.html:253
+msgid "Account"
+msgstr "Аккаунт"
+
+#: templates/core/base.html:137
+msgid "Admin tools"
+msgstr "Административные инструменты"
+
+#: templates/core/base.html:149
+msgid "Show navigation"
+msgstr "Показать навигацию"
+
+#: templates/core/base.html:163
+msgid "All categories"
+msgstr "Все категории"
+
+#: templates/core/base.html:218
+msgid "Search"
+msgstr "Поиск"
+
+#: templates/core/cache_update.html:12
+msgid "Edit cache value"
+msgstr "Редактировать значение кэша"
+
+#: templates/core/cache_update.html:15 templates/profile_app/profile.html:80
+#: templates/profile_app/profileAvatar.html:104
+msgid "Save"
+msgstr "Сохранить"
+
+#: templates/core/product_supply.html:23
+msgid "Look at this"
+msgstr "Посмотреть товар"
+
+#: templates/core/product_supply.html:79
+msgid "LIMITED OFFERS"
+msgstr "ОГРАНИЧЕННЫЕ ПРЕДЛОЖЕНИЯ"
+
+#: templates/core/product_supply.html:118
+msgid "days"
+msgstr "дни"
+
+#: templates/core/product_supply.html:124
+msgid "hours"
+msgstr "часы"
+
+#: templates/core/product_supply.html:130
+msgid "mins"
+msgstr "мин"
+
+#: templates/core/product_supply.html:136
+msgid "secs"
+msgstr "сек"
+
+#: templates/core/product_supply.html:148
+msgid "Popular products"
+msgstr "Популярные продукты"
+
+#: templates/core/product_supply.html:236
+msgid "LIMITED EDITION"
+msgstr "ОГРАНИЕННОЕ ИЗДАНИЕ"
+
+#: templates/core/setup-admin.html:21
+msgid "Setup admin panel"
+msgstr "Настроить административную панель"
+
+#: templates/core/setup-admin.html:26
+msgid "edit"
+msgstr "редактировать"
+
+#: templates/core/setup-admin.html:31
+msgid "Cache reset all"
+msgstr "Сбросить весь кэш"
+
+#: templates/core/setup-admin.html:32
+msgid "reset"
+msgstr "сбросить"
+
+#: templates/includes/navbar-profile1.html:13
+#: templates/order_app/historyorder.html:18
+#: templates/profile_app/account.html:18 templates/profile_app/profile.html:17
+msgid "Dashboard"
+msgstr "Панель"
+
+#: templates/includes/navbar-profile1.html:19
+#: templates/includes/order-information.html:9
+#: templates/order_app/historyorder.html:24
+#: templates/profile_app/account.html:24 templates/profile_app/profile.html:23
+msgid "History"
+msgstr "История"
+
+#: templates/includes/order-information.html:7
+msgid "date"
+msgstr "дата"
+
+#: templates/includes/order-information.html:22
+#: templates/order_app/oneorder.html:70 templates/order_app/order.html:144
+msgid "Amount"
+msgstr "Сумма"
+
+#: templates/includes/order-information.html:26
+#: templates/order_app/oneorder.html:58
+msgid "Status"
+msgstr "Статус"
+
+#: templates/includes/product-in-cart.html:43
+#: templates/includes/product-in-cart.html:84
+msgid "The cart is empty"
+msgstr "Корзина пустая"
+
+#: templates/includes/total_amount_in_cart.html:4
+msgid "Total"
+msgstr "Всего"
+
+#: templates/includes/total_amount_in_cart.html:11
+msgid "Your final benefit was"
+msgstr "Ваш последняя выгода была"
+
+#: templates/order_app/empty-cart.html:5
+msgid "Cart is empty"
+msgstr "Корзина пустая"
+
+#: templates/order_app/oneorder.html:24
+msgid "Date"
+msgstr "Дата"
+
+#: templates/order_app/oneorder.html:77 templates/order_app/order.html:148
+msgid "Pay"
+msgstr "Оплата"
+
+#: templates/order_app/order.html:12
+msgid "Progress"
+msgstr "Прогресс"
+
+#: templates/order_app/order.html:18 templates/order_app/order.html:39
+msgid "Step 1. User's settings"
+msgstr "Шаг 1. Настройки пользователя"
+
+#: templates/order_app/order.html:21 templates/order_app/order.html:66
+msgid "Step 2. Delivery"
+msgstr "Шаг 2. Доставка"
+
+#: templates/order_app/order.html:24 templates/order_app/order.html:85
+msgid "Step 3. Payment"
+msgstr "Шаг 3. Оплата"
+
+#: templates/order_app/order.html:27 templates/order_app/order.html:94
+msgid "Step 4. Confirmation"
+msgstr "Шаг 4. Подтверждение"
+
+#: templates/order_app/order.html:61 templates/order_app/order.html:80
+#: templates/order_app/order.html:89
+msgid "Next"
+msgstr "Дальше"
+
+#: templates/order_app/order.html:103
+msgid "Ivanov Ivan Ivanovich"
+msgstr "Иванов Иван Иванович"
+
+#: templates/order_app/order.html:124
+msgid "Cost delivery"
+msgstr "Стоимость доставки"
+
+#: templates/order_app/order.html:129
+msgid "Moscow"
+msgstr "Москва"
+
+#: templates/order_app/order.html:133
+msgid "Academic street, house 12, apartment 10"
+msgstr "Академическая улица, дом 12, квартира 10"
+
+#: templates/pay_app/success.html:5
+msgid "Order is paid"
+msgstr "Заказ оплачен"
+
+#: templates/profile_app/account.html:43
+msgid "Edit"
+msgstr "Редактировать"
+
+#: templates/profile_app/account.html:51
+msgid "You haven't had orders yet"
+msgstr "Вы еще не сделали ни одного заказа"
+
+#: templates/profile_app/profile.html:47
+msgid "add photo"
+msgstr "добавить фото"
+
+#: templates/profile_app/profileAvatar.html:31
+msgid "Private office"
+msgstr "Личный кабинет"
+
+#: templates/profile_app/profileAvatar.html:38
+msgid "Order history"
+msgstr "История заказов"
+
+#: templates/profile_app/profileAvatar.html:56
+msgid "Choose avatar"
+msgstr "Выберите аватарку"
+
+#: templates/profile_app/profileAvatar.html:61
+msgid "Surname Name Patronymic"
+msgstr "Фамилия Имя Отчество"

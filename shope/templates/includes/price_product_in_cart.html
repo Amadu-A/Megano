@@ -1,0 +1,25 @@
+<div class="Cart-block Cart-block_price">
+{% if discount_data %}
+
+    {% for sale_dct in discount_data %}
+        {% if item.product.id == sale_dct.product_id and sale_dct.discount %}
+            <div class="Cart-price">
+                <del>{{ item.amount|floatformat:"2" }}</del>
+            </div>
+
+            <div class="Cart-price">
+                {{ item.total_amount|floatformat:"2" }}
+            </div>
+        {% elif item.product.id == sale_dct.product_id %}
+            <div class="Cart-price">
+                {{ item.amount|floatformat:"2" }}
+            </div>
+        {% endif %}
+
+    {% endfor %}
+{% else %}
+    <div class="Cart-price">
+        {{ item.amount|floatformat:"2" }}
+    </div>
+{% endif %}
+</div>

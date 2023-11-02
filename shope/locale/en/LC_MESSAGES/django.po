@@ -1,0 +1,1194 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-01 09:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: auth_app/forms.py:19
+msgid "Username"
+msgstr "Username"
+
+#: auth_app/forms.py:20 auth_app/forms.py:63 profile_app/forms.py:13
+#: templates/core/base.html:262
+msgid "Email"
+msgstr "Email"
+
+#: auth_app/forms.py:21 templates/catalog_app/catalog.html:40
+msgid "Name"
+msgstr "Name"
+
+#: auth_app/forms.py:22
+msgid "last_name"
+msgstr "last_name"
+
+#: auth_app/forms.py:23 templates/profile_app/profileAvatar.html:87
+msgid "Password"
+msgstr "Password"
+
+#: auth_app/forms.py:24
+msgid "Repeat password"
+msgstr "Repeat password"
+
+#: auth_app/forms.py:43
+msgid "e-mail"
+msgstr "e-mail"
+
+#: auth_app/forms.py:76
+msgid "Set new password"
+msgstr "Set new password"
+
+#: auth_app/forms.py:77
+msgid "Repeat new password"
+msgstr "Repeat new password"
+
+#: auth_app/models.py:13 cart_app/models.py:16 catalog_app/models.py:233
+#: core/models/seller.py:14 order_app/models.py:16 profile_app/models.py:34
+msgid "user"
+msgstr "user"
+
+#: auth_app/models.py:14
+msgid "users"
+msgstr "users"
+
+#: auth_app/models.py:21 profile_app/forms.py:22
+#: templates/order_app/oneorder.html:28
+msgid "Full name"
+msgstr "Full name"
+
+#: auth_app/views.py:124
+msgid "The password was changed successfully. You can login"
+msgstr "The password was changed successfully. You can login"
+
+#: cart_app/models.py:20 templates/catalog_app/product.html:153
+msgid "Cart"
+msgstr "Cart"
+
+#: cart_app/models.py:21
+#, fuzzy
+#| msgid "Cart"
+msgid "Carts"
+msgstr "Carts"
+
+#: cart_app/models.py:32
+msgid "discount"
+msgstr "discount"
+
+#: cart_app/models.py:34
+msgid "amount with discount"
+msgstr "amount with discount"
+
+#: cart_app/models.py:37
+msgid "cart"
+msgstr "cart"
+
+#: cart_app/models.py:41
+msgid "CartItem"
+msgstr "CartItem"
+
+#: cart_app/models.py:42
+#, fuzzy
+#| msgid "CartItem"
+msgid "CartItems"
+msgstr "CartItems"
+
+#: cart_app/views.py:74
+msgid "Select the number of products"
+msgstr "Select the number of products"
+
+#: cart_app/views.py:82
+msgid "The product has been added to the cart"
+msgstr "The product has been added to the cart"
+
+#: cart_app/views.py:89
+msgid "Something went wrong"
+msgstr "Something went wrong"
+
+#: catalog_app/form.py:28 templates/catalog_app/product.html:181
+msgid "Review"
+msgstr "Review"
+
+#: catalog_app/models.py:13 catalog_app/models.py:47
+msgid "title"
+msgstr "title"
+
+#: catalog_app/models.py:19 catalog_app/models.py:34 catalog_app/models.py:40
+#: catalog_app/models.py:50 catalog_app/models.py:72 catalog_app/models.py:86
+#: catalog_app/models.py:99 catalog_app/models.py:114 catalog_app/models.py:130
+msgid "image"
+msgstr "image"
+
+#: catalog_app/models.py:27 catalog_app/models.py:53 catalog_app/models.py:85
+#: catalog_app/models.py:101 catalog_app/models.py:173
+msgid "category"
+msgstr "category"
+
+#: catalog_app/models.py:28
+msgid "categories"
+msgstr "categories"
+
+#: catalog_app/models.py:41
+msgid "images"
+msgstr "images"
+
+#: catalog_app/models.py:48 catalog_app/models.py:71
+#: core/models/base_discount.py:16
+msgid "description"
+msgstr "description"
+
+#: catalog_app/models.py:49 catalog_app/models.py:167 core/models/seller.py:9
+msgid "name"
+msgstr "name"
+
+#: catalog_app/models.py:52
+msgid "number_of_sales"
+msgstr "number_of_sales"
+
+#: catalog_app/models.py:54
+msgid "limited"
+msgstr "limited"
+
+#: catalog_app/models.py:55
+msgid "delivery"
+msgstr "delivery"
+
+#: catalog_app/models.py:61 catalog_app/models.py:69 catalog_app/models.py:100
+#: catalog_app/models.py:149 catalog_app/models.py:211
+#: catalog_app/models.py:234 catalog_app/models.py:248
+#: core/models/base_item.py:14 core/models/price.py:13
+msgid "product"
+msgstr "product"
+
+#: catalog_app/models.py:62
+msgid "products"
+msgstr "products"
+
+#: catalog_app/models.py:78
+msgid "slider"
+msgstr "slider"
+
+#: catalog_app/models.py:79
+msgid "sliders"
+msgstr "sliders"
+
+#: catalog_app/models.py:92
+msgid "banner"
+msgstr "banner"
+
+#: catalog_app/models.py:93
+msgid "banners"
+msgstr "banners"
+
+#: catalog_app/models.py:107
+msgid "product discount"
+msgstr "product discount"
+
+#: catalog_app/models.py:108
+msgid "product discounts"
+msgstr "product discounts"
+
+#: catalog_app/models.py:115
+msgid "category as group of products"
+msgstr "category as group of products"
+
+#: catalog_app/models.py:116
+msgid "fixed amount of discount"
+msgstr "fixed amount of discount"
+
+#: catalog_app/models.py:117
+msgid "fixed amount of price"
+msgstr "fixed amount of price"
+
+#: catalog_app/models.py:123
+msgid "group of product discount"
+msgstr "group of product discount"
+
+#: catalog_app/models.py:124
+msgid "group of product discounts"
+msgstr "group of product discounts"
+
+#: catalog_app/models.py:132
+msgid "amount of products for a success discount"
+msgstr "amount of products for a success discount"
+
+#: catalog_app/models.py:134
+msgid "quantity of products for a success discount"
+msgstr "quantity of products for a success discount"
+
+#: catalog_app/models.py:140
+msgid "cart discount"
+msgstr "cart discount"
+
+#: catalog_app/models.py:141
+msgid "cart discounts"
+msgstr "cart discounts"
+
+#: catalog_app/models.py:147
+msgid "author"
+msgstr "banners"
+
+#: catalog_app/models.py:148
+msgid "text"
+msgstr "text"
+
+#: catalog_app/models.py:155
+msgid "rewiew"
+msgstr "rewiew"
+
+#: catalog_app/models.py:156 templates/catalog_app/product.html:100
+msgid "reviews"
+msgstr "reviews"
+
+#: catalog_app/models.py:178
+msgid "type characteristic of product"
+msgstr "type characteristic of product"
+
+#: catalog_app/models.py:179
+msgid "types characteristic of product"
+msgstr "types characteristic of product"
+
+#: catalog_app/models.py:190
+msgid "type of characteristic"
+msgstr "type of characteristic"
+
+#: catalog_app/models.py:193
+msgid "value"
+msgstr "value"
+
+#: catalog_app/models.py:199
+msgid "characteristic value"
+msgstr "characteristic value"
+
+#: catalog_app/models.py:200
+msgid "characteristic values"
+msgstr "characteristic values"
+
+#: catalog_app/models.py:217
+msgid "value of characteristic"
+msgstr "value of characteristic"
+
+#: catalog_app/models.py:223
+msgid "characteristic of product"
+msgstr "characteristic of product"
+
+#: catalog_app/models.py:224
+msgid "characteristics of product"
+msgstr "characteristics of product"
+
+#: catalog_app/models.py:240
+msgid "viewed product"
+msgstr "viewed product"
+
+#: catalog_app/models.py:241
+msgid "viewed products"
+msgstr "viewed products"
+
+#: catalog_app/models.py:247
+msgid "session key"
+msgstr "session key"
+
+#: catalog_app/models.py:254
+msgid "product for comparison"
+msgstr "product for comparison"
+
+#: catalog_app/models.py:255
+msgid "products for comparison"
+msgstr "products for comparison"
+
+#: catalog_app/views.py:225
+msgid "Too much products to the comparison!"
+msgstr "Too much products to the comparison!"
+
+#: catalog_app/views.py:228
+msgid "The product was already added!"
+msgstr "The product was already added!"
+
+#: catalog_app/views.py:232
+msgid "The product have no common characteristics!"
+msgstr "The product have no common characteristics!"
+
+#: catalog_app/views.py:235
+msgid "The product has been added to the comparison!"
+msgstr "The product has been added to the comparison!"
+
+#: core/enums/delivery_type_enum.py:10
+msgid "express delivery"
+msgstr "express delivery"
+
+#: core/enums/delivery_type_enum.py:11
+msgid "regular delivery"
+msgstr "regular delivery"
+
+#: core/enums/order_status_enum.py:10
+msgid "is not paid"
+msgstr "is not paid"
+
+#: core/enums/order_status_enum.py:11
+msgid "is paid"
+msgstr "is paid"
+
+#: core/enums/order_status_enum.py:12
+msgid "is delivered"
+msgstr "is delivered"
+
+#: core/enums/order_status_enum.py:13
+msgid "is closed"
+msgstr "is closed"
+
+#: core/enums/pay_type_enum.py:10
+msgid "bank card"
+msgstr "bank card"
+
+#: core/enums/pay_type_enum.py:11
+msgid "spb"
+msgstr "spb"
+
+#: core/forms.py:11 templates/catalog_app/comparison.html:40
+#: ⁨templates/catalog_app/product copy.html⁩:126
+#: templates/catalog_app/product.html:115
+msgid "Value"
+msgstr "Value"
+
+#: core/models/base_discount.py:11
+msgid "discount name"
+msgstr "discount name"
+
+#: core/models/base_discount.py:12
+msgid "priority"
+msgstr "priority"
+
+#: core/models/base_discount.py:13
+msgid "sale value"
+msgstr "sale value"
+
+#: core/models/base_discount.py:14
+msgid "date of discount start"
+msgstr "date of discount start"
+
+#: core/models/base_discount.py:15
+msgid "date of discount end"
+msgstr "date of discount end"
+
+#: core/models/base_item.py:15 core/models/price.py:16 core/models/seller.py:20
+msgid "seller"
+msgstr "seller"
+
+#: core/models/base_item.py:16
+msgid "count product"
+msgstr "count product"
+
+#: core/models/base_item.py:17
+msgid "amount"
+msgstr "amount"
+
+#: core/models/base_model.py:7
+msgid "creation time"
+msgstr "creation time"
+
+#: core/models/base_model.py:8
+msgid "updated time"
+msgstr "updated time"
+
+#: core/models/base_model.py:9
+msgid "active"
+msgstr "active"
+
+#: core/models/cache_setup.py:9
+msgid "cache key"
+msgstr "cache key"
+
+#: core/models/cache_setup.py:12
+msgid "cache value"
+msgstr "cache value"
+
+#: core/models/price.py:10
+msgid "product's price"
+msgstr "product's price"
+
+#: core/models/price.py:24
+msgid "price"
+msgstr "price"
+
+#: core/models/price.py:25
+msgid "prices"
+msgstr "prices"
+
+#: core/models/seller.py:21
+msgid "sellers"
+msgstr "sellers"
+
+#: core/utils/exception.py:10
+msgid "The value of discount is more than the maximum! Max value is 99"
+msgstr "The value of discount is more than the maximum! Max value is 99"
+
+#: core/utils/exception.py:23
+msgid "The value of discount is less than the minimum! Min value is 0"
+msgstr "The value of discount is less than the minimum! Min value is 0"
+
+#: core/utils/product_discount.py:45
+msgid "Discount on the shopping cart has been applied! Benefit "
+msgstr "Discount on the shopping cart has been applied! Benefit "
+
+#: core/utils/product_discount.py:54
+msgid "The discount on the product has been applied! Benefit "
+msgstr "The discount on the product has been applied! Benefit "
+
+#: core/views.py:87
+msgid "The cache has been cleared"
+msgstr "The cache has been cleared"
+
+#: order_app/forms.py:12 templates/order_app/oneorder.html:46
+msgid "City"
+msgstr "City"
+
+#: order_app/forms.py:19 templates/order_app/oneorder.html:50
+msgid "Address"
+msgstr "Address"
+
+#: order_app/forms.py:26 ⁨templates/catalog_app/product copy.html⁩:154
+#: ⁨templates/catalog_app/product copy.html⁩:187
+#: ⁨templates/catalog_app/product copy.html⁩:220
+msgid "Delivery type"
+msgstr "Delivery type"
+
+#: order_app/forms.py:33
+msgid "Pay type"
+msgstr "Pay type"
+
+#: order_app/models.py:20
+msgid "city"
+msgstr "city"
+
+#: order_app/models.py:23
+msgid "address"
+msgstr "address"
+
+#: order_app/models.py:26
+msgid "payment type"
+msgstr "payment type"
+
+#: order_app/models.py:32
+msgid "delivery type"
+msgstr "delivery type"
+
+#: order_app/models.py:38
+msgid "status"
+msgstr "status"
+
+#: order_app/models.py:44
+msgid "order amount"
+msgstr "order amount"
+
+#: order_app/models.py:53 order_app/models.py:59 order_app/models.py:70
+msgid "order"
+msgstr "order"
+
+#: order_app/models.py:54
+msgid "orders"
+msgstr "orders"
+
+#: order_app/models.py:61 templates/core/product_supply.html:59
+msgid "from"
+msgstr "from"
+
+#: order_app/models.py:75
+msgid "OrderItem"
+msgstr "OrderItem"
+
+#: profile_app/forms.py:41 templates/core/base.html:260
+#: templates/order_app/oneorder.html:32
+msgid "Phone"
+msgstr "Phone"
+
+#: profile_app/forms.py:50 templates/profile_app/profileAvatar.html:51
+msgid "Avatar"
+msgstr "Avatar"
+
+#: profile_app/forms.py:69
+msgid "New password"
+msgstr "New password"
+
+#: profile_app/forms.py:75
+msgid "You can change your password"
+msgstr "You can change your password"
+
+#: profile_app/forms.py:79 profile_app/forms.py:85
+#: templates/profile_app/profileAvatar.html:95
+msgid "Confirm password"
+msgstr "Confirm password"
+
+#: profile_app/models.py:22
+msgid "phone"
+msgstr "phone"
+
+#: profile_app/models.py:28
+msgid "avatar"
+msgstr "avatar"
+
+#: profile_app/models.py:42
+msgid "user's profile"
+msgstr "user's profile"
+
+#: profile_app/models.py:43
+msgid "user's profiles"
+msgstr "user's profiles"
+
+#: profile_app/views.py:28
+msgid "Your profile has been updated"
+msgstr "Your profile has been updated"
+
+#: repositories/discount_product_group_repositories.py:70
+msgid "Discount successfully applied"
+msgstr "Discount successfully applied"
+
+#: repositories/discount_product_group_repositories.py:79
+msgid "To get a discount, add an item from the category "
+msgstr "To get a discount, add an item from the category "
+
+#: shope/settings.py:165
+msgid "English"
+msgstr "English"
+
+#: shope/settings.py:166
+msgid "Russian"
+msgstr "Russian"
+
+#: templates/auth_app/base-auth.html:10 templates/core/base.html:6
+msgid "Megano"
+msgstr "Megano"
+
+#: templates/auth_app/base-auth.html:54 templates/auth_app/e-mail.html:20
+#: templates/auth_app/login.html:7 templates/auth_app/login.html:14
+#: templates/auth_app/registr.html:76 templates/core/base.html:84
+msgid "Sign in"
+msgstr "Sign in"
+
+#: templates/auth_app/base-auth.html:55 templates/auth_app/login.html:18
+#: templates/auth_app/registr.html:8 templates/cart_app/cart.html:20
+msgid "Registration"
+msgstr "Registration"
+
+#: templates/auth_app/base-auth.html:82 templates/core/base.html:241
+#: templates/includes/navbar-profile1.html:7
+#: templates/order_app/historyorder.html:12
+#: templates/profile_app/account.html:12 templates/profile_app/profile.html:11
+#: templates/profile_app/profileAvatar.html:25
+msgid "Navigation"
+msgstr "Navigation"
+
+#: templates/auth_app/base-auth.html:85
+#: templates/catalog_app/product_viewed.html:12
+#: templates/catalog_app/sale.html:12 templates/catalog_app/sale_detail.html:12
+#: templates/core/about.html:14 templates/core/base.html:106
+#: templates/core/base.html:244 templates/profile_app/profileAvatar.html:11
+msgid "Home"
+msgstr "Home"
+
+#: templates/auth_app/base-auth.html:87 templates/core/base.html:112
+#: templates/core/base.html:247
+msgid "Catalog"
+msgstr "Catalog"
+
+#: templates/auth_app/base-auth.html:89 templates/core/base.html:115
+#: templates/core/base.html:250
+msgid "Comparison"
+msgstr "Comparison"
+
+#: templates/auth_app/base-auth.html:91
+#: templates/includes/navbar-profile1.html:16
+#: templates/order_app/historyorder.html:21
+#: templates/profile_app/account.html:21 templates/profile_app/profile.html:20
+#: templates/profile_app/profileAvatar.html:8
+#: templates/profile_app/profileAvatar.html:14
+#: templates/profile_app/profileAvatar.html:34
+msgid "Profile"
+msgstr "Profile"
+
+#: templates/auth_app/base-auth.html:97 templates/core/base.html:258
+msgid "Contacts"
+msgstr "Contacts"
+
+#: templates/auth_app/base-auth.html:99
+#: templates/profile_app/profileAvatar.html:71
+msgid "Telephone"
+msgstr "Telephone"
+
+#: templates/auth_app/base-auth.html:99
+#: templates/profile_app/profileAvatar.html:79
+msgid "E-mail"
+msgstr "E-mail"
+
+#: templates/auth_app/change_password_error.html:5
+msgid "Something went wrong while resetting your password"
+msgstr "Something went wrong while resetting your password"
+
+#: templates/auth_app/change_password_success.html:5
+msgid "Go to your email to continue resetting your password."
+msgstr "Go to your email to continue resetting your password."
+
+#: templates/auth_app/confirm-email.html:5
+msgid "Please, go to your email and confirm it to continue the registration"
+msgstr "Please, go to your email and confirm it to continue the registration"
+
+#: templates/auth_app/e-mail.html:7
+msgid "Password recovery (1/2)"
+msgstr "Password recovery (1/2)"
+
+#: templates/auth_app/e-mail.html:8
+msgid ""
+"To recover your password, enter the email address you registered your "
+"account with"
+msgstr ""
+"To recover your password, enter the email address you registered your "
+"account with"
+
+#: templates/auth_app/e-mail.html:17
+msgid "Get verification code"
+msgstr "Get verification code"
+
+#: templates/auth_app/login.html:16
+msgid "Forgot your password?"
+msgstr "Forgot your password?"
+
+#: templates/auth_app/password_reset.html:7
+msgid "Password recovery (2/2)"
+msgstr "Password recovery (2/2)"
+
+#: templates/auth_app/password_reset.html:8
+msgid "Set a new password to your account"
+msgstr "Set a new password to your account"
+
+#: templates/auth_app/password_reset.html:20
+#, fuzzy
+#| msgid "New password"
+msgid "Save password"
+msgstr "Save password"
+
+#: templates/auth_app/registr.html:71 templates/core/base.html:85
+msgid "Register"
+msgstr "Register"
+
+#: templates/auth_app/registration-error.html:5
+msgid "Something went wrong during registration..."
+msgstr "Something went wrong during registration..."
+
+#: templates/auth_app/verify-email.html:5
+msgid "You successfully confirmed your email!"
+msgstr "You successfully confirmed your email!"
+
+#: templates/cart_app/cart.html:16 templates/includes/order-information.html:6
+#: templates/order_app/oneorder.html:10
+#: venv/lib/python3.11/site-packages/django/forms/formsets.py:484
+#: venv/lib/python3.11/site-packages/django/forms/formsets.py:491
+msgid "Order"
+msgstr "Order"
+
+#: templates/catalog_app/catalog.html:14 templates/catalog_app/catalog.html:62
+msgid "Filter"
+msgstr "Filter"
+
+#: templates/catalog_app/catalog.html:30 templates/catalog_app/catalog.html:93
+#: templates/catalog_app/product.html:156
+msgid "Price"
+msgstr "Price"
+
+#: templates/catalog_app/catalog.html:49
+msgid "Only products in stock"
+msgstr "Only products in stock"
+
+#: templates/catalog_app/catalog.html:56
+msgid "With free delivery"
+msgstr "With free delivery"
+
+#: templates/catalog_app/catalog.html:70
+msgid "Popular tags"
+msgstr "Popular tags"
+
+#: templates/catalog_app/catalog.html:87
+msgid "Sort by:"
+msgstr "Sort by:"
+
+#: templates/catalog_app/catalog.html:91
+msgid "Popularity"
+msgstr "Popularity"
+
+#: templates/catalog_app/catalog.html:95
+#: ⁨templates/catalog_app/product copy.html⁩:98
+msgid "Reviews"
+msgstr "Reviews"
+
+#: templates/catalog_app/catalog.html:97
+msgid "Novelty"
+msgstr "Novelty"
+
+#: templates/catalog_app/catalog.html:183
+msgid "There are no products matching your request."
+msgstr "There are no products matching your request."
+
+#: templates/catalog_app/comparison.html:39
+#: ⁨templates/catalog_app/product copy.html⁩:95
+#: ⁨templates/catalog_app/product copy.html⁩:125
+#: templates/catalog_app/product.html:114
+msgid "Characteristic"
+msgstr "Characteristic"
+
+#: templates/catalog_app/comparison.html:43
+msgid "General parameters"
+msgstr "General parameters"
+
+#: templates/catalog_app/comparison.html:47
+msgid "Type"
+msgstr "Type"
+
+#: templates/catalog_app/comparison.html:51
+msgid "Model"
+msgstr "Model"
+
+#: templates/catalog_app/comparison.html:94
+msgid "Add to Cart"
+msgstr "Add to Cart"
+
+#: ⁨templates/catalog_app/product copy.html⁩:35
+msgid "Barand New Phone Smart Busines"
+msgstr "Barand New Phone Smart Busines"
+
+#: ⁨templates/catalog_app/product copy.html⁩:62
+#: ⁨templates/catalog_app/product copy.html⁩:148
+#: ⁨templates/catalog_app/product copy.html⁩:181
+#: templates/catalog_app/product.html:57 templates/catalog_app/product.html:142
+msgid "Buy"
+msgstr "Buy"
+
+#: ⁨templates/catalog_app/product copy.html⁩:69
+#: templates/catalog_app/product.html:64
+msgid "Congratulations"
+msgstr "Congratulations"
+
+#: ⁨templates/catalog_app/product copy.html⁩:73
+msgid "The product was successfully added to cart!"
+msgstr "The product was successfully added to cart!"
+
+#: ⁨templates/catalog_app/product copy.html⁩:81
+#: templates/catalog_app/product.html:76
+msgid "Tags"
+msgstr "Tags"
+
+#: ⁨templates/catalog_app/product copy.html⁩:81
+msgid "Accessories"
+msgstr "Accessories"
+
+#: ⁨templates/catalog_app/product copy.html⁩:81
+msgid "Design"
+msgstr "Design"
+
+#: ⁨templates/catalog_app/product copy.html⁩:81
+msgid "Games"
+msgstr "Games"
+
+#: ⁨templates/catalog_app/product copy.html⁩:89
+#: templates/catalog_app/product.html:91
+msgid "Description"
+msgstr "Description"
+
+#: ⁨templates/catalog_app/product copy.html⁩:92
+#: templates/catalog_app/product.html:94
+msgid "Sellers"
+msgstr "Sellers"
+
+#: ⁨templates/catalog_app/product copy.html⁩:103 templates/core/about.html:123
+msgid "Megano Store History"
+msgstr "Megano Store History"
+
+#: ⁨templates/catalog_app/product copy.html⁩:129
+msgid "Device type"
+msgstr "Device type"
+
+#: ⁨templates/catalog_app/product copy.html⁩:130
+msgid "Notebook"
+msgstr "Notebook"
+
+#: ⁨templates/catalog_app/product copy.html⁩:142
+msgid "Sitilink"
+msgstr "Sitilink"
+
+#: ⁨templates/catalog_app/product copy.html⁩:155
+#: ⁨templates/catalog_app/product copy.html⁩:188
+#: ⁨templates/catalog_app/product copy.html⁩:191
+#: ⁨templates/catalog_app/product copy.html⁩:221
+#: templates/order_app/order.html:121
+msgid "Regular delivery"
+msgstr "Regular delivery"
+
+#: ⁨templates/catalog_app/product copy.html⁩:158
+#: ⁨templates/catalog_app/product copy.html⁩:192
+#: ⁨templates/catalog_app/product copy.html⁩:224
+#: templates/catalog_app/product.html:152
+#: templates/includes/order-information.html:18
+#: templates/order_app/oneorder.html:54
+msgid "Payment"
+msgstr "Payment"
+
+#: ⁨templates/catalog_app/product copy.html⁩:159
+#: ⁨templates/catalog_app/product copy.html⁩:195
+#: ⁨templates/catalog_app/product copy.html⁩:225
+#: templates/order_app/order.html:125
+msgid "Online card"
+msgstr "Online card"
+
+#: ⁨templates/catalog_app/product copy.html⁩:162
+#: ⁨templates/catalog_app/product copy.html⁩:208
+#: ⁨templates/catalog_app/product copy.html⁩:228
+msgid "Cost"
+msgstr "Cost"
+
+#: ⁨templates/catalog_app/product copy.html⁩:175
+msgid "DNS"
+msgstr "DNS"
+
+#: ⁨templates/catalog_app/product copy.html⁩:214
+msgid "Eldorado"
+msgstr "Eldorado"
+
+#: ⁨templates/catalog_app/product copy.html⁩:258
+msgid "1 review"
+msgstr "1 review"
+
+#: ⁨templates/catalog_app/product copy.html⁩:268
+msgid "Alexandra "
+msgstr "Alexandra "
+
+#: ⁨templates/catalog_app/product copy.html⁩:268
+msgid "Brovina"
+msgstr "Brovina"
+
+#: ⁨templates/catalog_app/product copy.html⁩:278
+msgid "December 25"
+msgstr "December 25"
+
+#: ⁨templates/catalog_app/product copy.html⁩:286
+msgid "Add a review"
+msgstr "Add a review"
+
+#: templates/catalog_app/product.html:65
+msgid "Close the window"
+msgstr "Close the window"
+
+#: templates/catalog_app/product.html:68
+msgid "Product has been added to the cart"
+msgstr "Product has been added to the cart"
+
+#: templates/catalog_app/product.html:97
+msgid "Characteristics"
+msgstr "Characteristics"
+
+#: templates/catalog_app/product.html:148
+#: templates/includes/order-information.html:14
+#: templates/order_app/oneorder.html:42
+msgid "Delivery"
+msgstr "Delivery"
+
+#: templates/catalog_app/product.html:149
+msgid "Custom delivery"
+msgstr "Custom delivery"
+
+#: templates/catalog_app/product.html:202
+msgid "New review"
+msgstr "New review"
+
+#: templates/catalog_app/product.html:213
+msgid "Add"
+msgstr "Add"
+
+#: templates/catalog_app/product_viewed.html:14
+msgid "Viewed products"
+msgstr "Viewed products"
+
+#: templates/catalog_app/sale.html:14 templates/catalog_app/sale_detail.html:14
+#: templates/core/base.html:112
+msgid "Sales"
+msgstr "Sales"
+
+#: templates/catalog_app/sale_detail.html:16
+msgid "Sale detail"
+msgstr "Sale detail"
+
+#: templates/catalog_app/sale_detail.html:44
+#, fuzzy
+#| msgid "category as group of products"
+msgid "Category products"
+msgstr "category as group of products"
+
+#: templates/core/about.html:11
+msgid "About Megano"
+msgstr "About Megano"
+
+#: templates/core/about.html:16
+msgid "About us"
+msgstr "About us"
+
+#: templates/core/about.html:30
+msgid "Shipping & Returns"
+msgstr "Shipping & Returns"
+
+#: templates/core/about.html:32
+msgid "World wide shipping"
+msgstr "World wide shipping"
+
+#: templates/core/about.html:42
+msgid "Money Back"
+msgstr "Money Back"
+
+#: templates/core/about.html:44
+msgid "Guaranteed payments"
+msgstr "Guaranteed payments"
+
+#: templates/core/about.html:54
+msgid "Support Policy"
+msgstr "Support Policy"
+
+#: templates/core/about.html:56
+msgid "Fast support team"
+msgstr "Fast support team"
+
+#: templates/core/about.html:66
+msgid "Quality Guarantee"
+msgstr "Quality Guarantee"
+
+#: templates/core/about.html:68
+msgid "Best guaranteed items"
+msgstr "Best guaranteed items"
+
+#: templates/core/about.html:75
+msgid "Follow Us"
+msgstr "Follow Us"
+
+#: templates/core/about.html:101
+msgid "Why Choose Megano?"
+msgstr "Why Choose Megano?"
+
+#: templates/core/base.html:82 templates/core/base.html:139
+msgid "Sign out"
+msgstr "Sign out"
+
+#: templates/core/base.html:109
+msgid "About"
+msgstr "About"
+
+#: templates/core/base.html:120
+msgid "Viewed"
+msgstr "Viewed"
+
+#: templates/core/base.html:135 templates/core/base.html:253
+msgid "Account"
+msgstr "Account"
+
+#: templates/core/base.html:137
+msgid "Admin tools"
+msgstr "Admin tools"
+
+#: templates/core/base.html:149
+msgid "Show navigation"
+msgstr "Show navigation"
+
+#: templates/core/base.html:163
+msgid "All categories"
+msgstr "All categories"
+
+#: templates/core/base.html:218
+msgid "Search"
+msgstr "Search"
+
+#: templates/core/cache_update.html:12
+msgid "Edit cache value"
+msgstr "Edit cache value"
+
+#: templates/core/cache_update.html:15 templates/profile_app/profile.html:80
+#: templates/profile_app/profileAvatar.html:104
+msgid "Save"
+msgstr "Save"
+
+#: templates/core/product_supply.html:23
+msgid "Look at this"
+msgstr "Look at this"
+
+#: templates/core/product_supply.html:79
+msgid "LIMITED OFFERS"
+msgstr "LIMITED OFFERS"
+
+#: templates/core/product_supply.html:118
+msgid "days"
+msgstr "days"
+
+#: templates/core/product_supply.html:124
+msgid "hours"
+msgstr "hours"
+
+#: templates/core/product_supply.html:130
+msgid "mins"
+msgstr "mins"
+
+#: templates/core/product_supply.html:136
+msgid "secs"
+msgstr "secs"
+
+#: templates/core/product_supply.html:148
+msgid "Popular products"
+msgstr "Popular products"
+
+#: templates/core/product_supply.html:236
+msgid "LIMITED EDITION"
+msgstr "LIMITED EDITION"
+
+#: templates/core/setup-admin.html:21
+msgid "Setup admin panel"
+msgstr "Setup admin panel"
+
+#: templates/core/setup-admin.html:26
+msgid "edit"
+msgstr "edit"
+
+#: templates/core/setup-admin.html:31
+msgid "Cache reset all"
+msgstr "Cache reset all"
+
+#: templates/core/setup-admin.html:32
+msgid "reset"
+msgstr "reset"
+
+#: templates/includes/navbar-profile1.html:13
+#: templates/order_app/historyorder.html:18
+#: templates/profile_app/account.html:18 templates/profile_app/profile.html:17
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: templates/includes/navbar-profile1.html:19
+#: templates/includes/order-information.html:9
+#: templates/order_app/historyorder.html:24
+#: templates/profile_app/account.html:24 templates/profile_app/profile.html:23
+msgid "History"
+msgstr "History"
+
+#: templates/includes/order-information.html:7
+msgid "date"
+msgstr "date"
+
+#: templates/includes/order-information.html:22
+#: templates/order_app/oneorder.html:70 templates/order_app/order.html:144
+msgid "Amount"
+msgstr "Amount"
+
+#: templates/includes/order-information.html:26
+#: templates/order_app/oneorder.html:58
+msgid "Status"
+msgstr "Status"
+
+#: templates/includes/product-in-cart.html:43
+#: templates/includes/product-in-cart.html:84
+msgid "The cart is empty"
+msgstr "The cart is empty"
+
+#: templates/includes/total_amount_in_cart.html:4
+msgid "Total"
+msgstr "Total"
+
+#: templates/includes/total_amount_in_cart.html:11
+msgid "Your final benefit was"
+msgstr "Your final benefit was"
+
+#: templates/order_app/empty-cart.html:5
+msgid "Cart is empty"
+msgstr "Cart is empty"
+
+#: templates/order_app/oneorder.html:24
+msgid "Date"
+msgstr "Date"
+
+#: templates/order_app/oneorder.html:77 templates/order_app/order.html:148
+msgid "Pay"
+msgstr "Pay"
+
+#: templates/order_app/order.html:12
+msgid "Progress"
+msgstr "Progress"
+
+#: templates/order_app/order.html:18 templates/order_app/order.html:39
+msgid "Step 1. User's settings"
+msgstr "Step 1. User's settings"
+
+#: templates/order_app/order.html:21 templates/order_app/order.html:66
+msgid "Step 2. Delivery"
+msgstr "Step 2. Delivery"
+
+#: templates/order_app/order.html:24 templates/order_app/order.html:85
+msgid "Step 3. Payment"
+msgstr "Step 3. Payment"
+
+#: templates/order_app/order.html:27 templates/order_app/order.html:94
+msgid "Step 4. Confirmation"
+msgstr "Step 4. Confirmation"
+
+#: templates/order_app/order.html:61 templates/order_app/order.html:80
+#: templates/order_app/order.html:89
+msgid "Next"
+msgstr "Next"
+
+#: templates/order_app/order.html:103
+msgid "Ivanov Ivan Ivanovich"
+msgstr "Ivanov Ivan Ivanovich"
+
+#: templates/order_app/order.html:124
+msgid "Cost delivery"
+msgstr "Cost delivery"
+
+#: templates/order_app/order.html:129
+msgid "Moscow"
+msgstr "Moscow"
+
+#: templates/order_app/order.html:133
+msgid "Academic street, house 12, apartment 10"
+msgstr "Academic street, house 12, apartment 10"
+
+#: templates/pay_app/success.html:5
+msgid "Order is paid"
+msgstr "Order is paid"
+
+#: templates/profile_app/account.html:43
+msgid "Edit"
+msgstr "Edit"
+
+#: templates/profile_app/account.html:51
+msgid "You haven't had orders yet"
+msgstr "You haven't had orders yet"
+
+#: templates/profile_app/profile.html:47
+msgid "add photo"
+msgstr "add photo"
+
+#: templates/profile_app/profileAvatar.html:31
+msgid "Private office"
+msgstr "Private office"
+
+#: templates/profile_app/profileAvatar.html:38
+msgid "Order history"
+msgstr "Order history"
+
+#: templates/profile_app/profileAvatar.html:56
+msgid "Choose avatar"
+msgstr "Choose avatar"
+
+#: templates/profile_app/profileAvatar.html:61
+msgid "Surname Name Patronymic"
+msgstr "Surname Name Patronymic"

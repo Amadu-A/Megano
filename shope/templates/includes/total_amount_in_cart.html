@@ -1,0 +1,17 @@
+{% load i18n %}
+
+<div class="Cart-block Cart-block_total">
+    <strong class="Cart-title">{% trans 'Total' %}:
+    </strong><span class="Cart-price">{{amount|floatformat:"2"}}</span>
+    {% if amount != total_amount %}
+        <br>
+        <div class="Cart-title">
+            {% if user.is_authenticated %}
+
+            {% trans 'Your final benefit was' %}:
+            <span class="Cart-price">{{ discount|floatformat:"2" }}</span>
+            {% endif %}
+
+        </div>
+    {% endif %}
+</div>

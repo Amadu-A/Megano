@@ -1,0 +1,35 @@
+{% extends "core/base.html" %}
+{% load i18n %}
+{% load static %}
+{% block content_body %}
+    <script src="https://yookassa.ru/checkout-widget/v1/checkout-widget.js"></script>
+    <div id="payment-form"></div>
+    <script>
+        const confirmation_t = '{{ confirmation_t }}'
+        //Инициализация виджета. Все параметры обязательные.
+        const checkout = new window.YooMoneyCheckoutWidget({
+            confirmation_token: confirmation_t, //Токен, который  получили после создания платежа
+            return_url: '', //Ссылка на страницу завершения оплаты
+            
+            customization :{
+                modal: false
+            },
+            
+            error_callback: function(error) {
+                console.log(error)
+            }
+        });
+
+        checkout.on('success', () => {
+            //Код, который нужно выполнить после успешной оплаты.
+          
+            window.location.href = "{% url 'pay_app:success-pay' pk %}";
+
+            //Удаление инициализированного виджета
+            checkout.destroy();
+        });
+        
+        //Отображение платежной формы в контейнере
+        checkout.render('payment-form');
+    </script>
+{% endblock content_body %}

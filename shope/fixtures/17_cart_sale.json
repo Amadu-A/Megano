@@ -1,0 +1,56 @@
+[
+  {
+    "model": "catalog_app.cartsale",
+    "pk": 1,
+    "fields": {
+      "created_at": "2023-09-11T11:12:35.611Z",
+      "updated_at": "2023-09-11T11:12:35.611Z",
+      "is_active": true,
+      "name": "Набери на 10000",
+      "priority": 1,
+      "value": 3,
+      "data_start": "2023-09-11",
+      "data_end": "2025-03-31",
+      "description": "Набери на 10000 рублей и получи скидку в 3 %",
+      "image": "images/2023/09/11/sale-pic_Ybv7Qgu.png",
+      "amount": "10000",
+      "quantity": 3
+    }
+  },
+  {
+    "model": "catalog_app.cartsale",
+    "pk": 2,
+    "fields": {
+      "created_at": "2023-09-11T11:13:54.981Z",
+      "updated_at": "2023-09-11T11:15:35.435Z",
+      "is_active": true,
+      "name": "Набери на 50000",
+      "priority": 2,
+      "value": 5,
+      "data_start": "2023-09-11",
+      "data_end": "2025-03-31",
+      "description": "Набери на 50000 рублей и получи скидку 5 % на всё!",
+      "image": "images/2023/09/11/sale-pic_AkeXmdU.png",
+      "amount": "50000",
+      "quantity": 3
+    }
+  },
+  {
+    "model": "catalog_app.cartsale",
+    "pk": 3,
+    "fields": {
+      "created_at": "2023-09-11T11:15:17.272Z",
+      "updated_at": "2023-09-11T11:15:17.272Z",
+      "is_active": true,
+      "name": "Набери на 100000",
+      "priority": 1,
+      "value": 1,
+      "data_start": "2023-09-11",
+      "data_end": "2025-03-31",
+      "description": "Набери на 100000 на рублей и получи скидку на 10 % на всю корзину!",
+      "image": "images/2023/09/11/sale-pic_7QtTKBW.png",
+      "amount": "100000",
+      "quantity": 2
+    }
+  }
+]

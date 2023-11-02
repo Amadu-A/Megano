@@ -1,0 +1,79 @@
+{% extends 'auth_app/base-auth.html' %}
+{% load i18n %}
+
+
+{% block content %}
+
+    <div class="header">
+        <h3 class="sign-in">{% trans 'Registration' %}</h3>
+
+    </div>
+    <div class="clear"></div>
+    <form class="register" action="{% url 'auth_app:register' %}" method="post">
+        {% csrf_token %}
+
+        <div class="container">
+            <div class="row">
+                <div class="custom-form-edit">
+                    {{ form.first_name }}
+                </div>
+                <div class="custom-form-edit">
+                    {{ form.last_name }}
+                </div>
+            </div>
+            <div class="form-error">
+                {% if form.first_name.errors %}
+                    {{ form.first_name.errors }}
+                {% endif %}
+            </div>
+            <div class="form-error">
+                {% if form.last_name.errors %}
+                    {{ form.last_name.errors }}
+                {% endif %}
+            </div>
+            <div class="row">
+                <div class="custom-form-edit">
+                    {{ form.username }}
+                </div>
+                <div class="custom-form-edit">
+                    {{ form.email }}
+                </div>
+            </div>
+            <div class="form-error">
+                {% if form.username.errors %}
+                    {{ form.username.errors }}
+                {% endif %}
+            </div>
+            <div class="form-error">
+                {% if form.email.errors %}
+                    {{ form.email.errors }}
+                {% endif %}
+            </div>
+            <div class="row">
+                <div class="custom-form-edit">
+                    {{ form.password1 }}
+                </div>
+                <div class="custom-form-edit">
+                    {{ form.password2 }}
+                </div>
+            </div>
+            <div class="form-error">
+                {% if form.password1.errors %}
+                    {{ form.password1.errors }}
+                {% endif %}
+            </div>
+            <div class="form-error">
+                {% if form.password2.errors %}
+                    {{ form.password2.errors }}
+                {% endif %}
+            </div>
+        </div>
+        <input type="submit" value={% trans 'Register' %}>
+    </form>
+
+
+    <a class="registr" href="{% url 'auth_app:login' %}">
+        {% trans 'Sign in' %}
+    </a>
+    <div class="clear"></div>
+{% endblock content %}

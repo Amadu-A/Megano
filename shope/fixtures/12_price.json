@@ -1,0 +1,327 @@
+[
+  {
+    "model": "core.price",
+    "pk": 1,
+    "fields": {
+      "created_at": "2023-09-08T20:39:03.586Z",
+      "updated_at": "2023-10-04T05:06:32.865Z",
+      "is_active": true,
+      "price": "5249.99",
+      "product": 1,
+      "seller": 2,
+      "date": "2023-09-24"
+    }
+  },
+  {
+    "model": "core.price",
+    "pk": 2,
+    "fields": {
+      "created_at": "2023-09-08T20:39:30.961Z",
+      "updated_at": "2023-10-04T05:06:32.866Z",
+      "is_active": true,
+      "price": "6520.99",
+      "product": 2,
+      "seller": 3,
+      "date": "2023-09-07"
+    }
+  },
+  {
+    "model": "core.price",
+    "pk": 3,
+    "fields": {
+      "created_at": "2023-09-08T20:40:00.281Z",
+      "updated_at": "2023-10-04T05:06:32.866Z",
+      "is_active": true,
+      "price": "4253.99",
+      "product": 3,
+      "seller": 4,
+      "date": "2022-02-18"
+    }
+  },
+  {
+    "model": "core.price",
+    "pk": 4,
+    "fields": {
+      "created_at": "2023-09-08T20:40:32.874Z",
+      "updated_at": "2023-10-04T05:06:32.867Z",
+      "is_active": true,
+      "price": "250.01",
+      "product": 5,
+      "seller": 5,
+      "date": "2023-06-17"
+    }
+  },
+  {
+    "model": "core.price",
+    "pk": 5,
+    "fields": {
+      "created_at": "2023-09-08T20:40:49.184Z",
+      "updated_at": "2023-10-04T05:06:32.868Z",
+      "is_active": true,
+      "price": "124.00",
+      "product": 6,
+      "seller": 6,
+      "date": "2022-03-02"
+    }
+  },
+  {
+    "model": "core.price",
+    "pk": 6,
+    "fields": {
+      "created_at": "2023-09-08T20:41:13.322Z",
+      "updated_at": "2023-10-04T05:06:32.868Z",
+      "is_active": true,
+      "price": "3499.99",
+      "product": 7,
+      "seller": 7,
+      "date": "2023-04-11"
+    }
+  },
+  {
+    "model": "core.price",
+    "pk": 7,
+    "fields": {
+      "created_at": "2023-09-08T20:41:35.049Z",
+      "updated_at": "2023-10-04T05:06:32.868Z",
+      "is_active": true,
+      "price": "3321.00",
+      "product": 8,
+      "seller": 8,
+      "date": "2022-01-07"
+    }
+  },
+  {
+    "model": "core.price",
+    "pk": 8,
+    "fields": {
+      "created_at": "2023-09-08T20:41:53.115Z",
+      "updated_at": "2023-10-04T05:06:32.869Z",
+      "is_active": true,
+      "price": "7050.00",
+      "product": 9,
+      "seller": 8,
+      "date": "2023-04-19"
+    }
+  },
+  {
+    "model": "core.price",
+    "pk": 9,
+    "fields": {
+      "created_at": "2023-09-08T20:42:15.361Z",
+      "updated_at": "2023-10-04T05:06:32.869Z",
+      "is_active": true,
+      "price": "3653.99",
+      "product": 10,
+      "seller": 9,
+      "date": "2023-05-10"
+    }
+  },
+  {
+    "model": "core.price",
+    "pk": 10,
+    "fields": {
+      "created_at": "2023-09-08T20:42:36.329Z",
+      "updated_at": "2023-10-04T05:06:32.870Z",
+      "is_active": true,
+      "price": "7774.01",
+      "product": 11,
+      "seller": 10,
+      "date": "2022-01-04"
+    }
+  },
+  {
+    "model": "core.price",
+    "pk": 11,
+    "fields": {
+      "created_at": "2023-09-08T20:43:53.283Z",
+      "updated_at": "2023-10-04T05:06:32.870Z",
+      "is_active": true,
+      "price": "8540.99",
+      "product": 12,
+      "seller": 3,
+      "date": "2023-08-13"
+    }
+  },
+  {
+    "model": "core.price",
+    "pk": 12,
+    "fields": {
+      "created_at": "2023-09-08T20:44:22.185Z",
+      "updated_at": "2023-10-04T05:06:32.870Z",
+      "is_active": true,
+      "price": "6852.00",
+      "product": 13,
+      "seller": 5,
+      "date": "2022-11-23"
+    }
+  },
+  {
+    "model": "core.price",
+    "pk": 13,
+    "fields": {
+      "created_at": "2023-09-08T20:44:44.159Z",
+      "updated_at": "2023-10-04T05:06:32.871Z",
+      "is_active": true,
+      "price": "6664.01",
+      "product": 14,
+      "seller": 6,
+      "date": "2022-12-25"
+    }
+  },
+  {
+    "model": "core.price",
+    "pk": 14,
+    "fields": {
+      "created_at": "2023-09-08T20:45:30.472Z",
+      "updated_at": "2023-10-04T05:06:32.871Z",
+      "is_active": true,
+      "price": "4859.99",
+      "product": 15,
+      "seller": 9,
+      "date": "2022-11-04"
+    }
+  },
+  {
+    "model": "core.price",
+    "pk": 15,
+    "fields": {
+      "created_at": "2023-09-08T20:46:00.609Z",
+      "updated_at": "2023-10-04T05:06:32.872Z",
+      "is_active": true,
+      "price": "8879.99",
+      "product": 16,
+      "seller": 2,
+      "date": "2022-09-27"
+    }
+  },
+  {
+    "model": "core.price",
+    "pk": 16,
+    "fields": {
+      "created_at": "2023-09-08T20:46:36.106Z",
+      "updated_at": "2023-10-04T05:06:32.872Z",
+      "is_active": true,
+      "price": "9743.99",
+      "product": 17,
+      "seller": 10,
+      "date": "2023-09-28"
+    }
+  },
+  {
+    "model": "core.price",
+    "pk": 17,
+    "fields": {
+      "created_at": "2023-09-08T20:47:10.721Z",
+      "updated_at": "2023-10-04T05:06:32.873Z",
+      "is_active": true,
+      "price": "12232.99",
+      "product": 18,
+      "seller": 3,
+      "date": "2022-12-26"
+    }
+  },
+  {
+    "model": "core.price",
+    "pk": 18,
+    "fields": {
+      "created_at": "2023-09-08T20:47:42.410Z",
+      "updated_at": "2023-10-04T05:06:32.873Z",
+      "is_active": true,
+      "price": "9998.99",
+      "product": 19,
+      "seller": 8,
+      "date": "2022-01-25"
+    }
+  },
+  {
+    "model": "core.price",
+    "pk": 19,
+    "fields": {
+      "created_at": "2023-09-08T20:48:11.177Z",
+      "updated_at": "2023-10-04T05:06:32.874Z",
+      "is_active": true,
+      "price": "6653.99",
+      "product": 3,
+      "seller": 9,
+      "date": "2023-02-02"
+    }
+  },
+  {
+    "model": "core.price",
+    "pk": 20,
+    "fields": {
+      "created_at": "2023-09-09T06:51:34.315Z",
+      "updated_at": "2023-10-04T05:06:32.874Z",
+      "is_active": true,
+      "price": "5654.00",
+      "product": 20,
+      "seller": 9,
+      "date": "2023-01-13"
+    }
+  },
+  {
+    "model": "core.price",
+    "pk": 21,
+    "fields": {
+      "created_at": "2023-09-09T06:52:04.227Z",
+      "updated_at": "2023-10-04T05:06:32.875Z",
+      "is_active": true,
+      "price": "1459.99",
+      "product": 21,
+      "seller": 4,
+      "date": "2022-10-01"
+    }
+  },
+  {
+    "model": "core.price",
+    "pk": 22,
+    "fields": {
+      "created_at": "2023-09-09T06:52:40.107Z",
+      "updated_at": "2023-10-04T05:06:32.875Z",
+      "is_active": true,
+      "price": "4149.99",
+      "product": 22,
+      "seller": 2,
+      "date": "2023-03-13"
+    }
+  },
+  {
+    "model": "core.price",
+    "pk": 23,
+    "fields": {
+      "created_at": "2023-09-09T06:53:07.724Z",
+      "updated_at": "2023-10-04T05:06:32.876Z",
+      "is_active": true,
+      "price": "2200.01",
+      "product": 23,
+      "seller": 8,
+      "date": "2022-12-23"
+    }
+  },
+  {
+    "model": "core.price",
+    "pk": 24,
+    "fields": {
+      "created_at": "2023-10-04T05:05:21.442Z",
+      "updated_at": "2023-10-04T05:06:32.876Z",
+      "is_active": true,
+      "price": "1200.00",
+      "product": 1,
+      "seller": 5,
+      "date": "2023-09-12"
+    }
+  },
+  {
+    "model": "core.price",
+    "pk": 25,
+    "fields": {
+      "created_at": "2023-10-04T05:08:50.488Z",
+      "updated_at": "2023-10-04T05:08:50.488Z",
+      "is_active": true,
+      "price": "2300.00",
+      "product": 1,
+      "seller": 2,
+      "date": "2023-10-04"
+    }
+  }
+]

@@ -1,0 +1,32 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% load i18n %}
+{% block content_body %}
+    <div class="Middle Middle_top">
+        <div class="Section">
+            <div class="wrap">
+                <form class="form Cart" action="#" method="post">
+                    {% include 'includes/product-in-cart.html' %}
+                </form>
+                <div class="Cart-total">
+                    {% include 'includes/total_amount_in_cart.html' %}
+                    {% if user.is_authenticated %}
+                        <div class="Cart-block">
+                            <a class="btn btn_success btn_lg"
+                               href="{% url 'order_app:create-order' %}">{% trans 'Order' %}</a>
+                        </div>
+                    {% else %}
+                        <div class="Cart-block">
+                            <a class="btn btn_success btn_lg" href="{% url 'auth_app:register' %}">{% trans 'Registration' %}</a>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content_body %}
+
+{% block script %}
+    <script src="{% static '/assets/js/cart_edit.js' %}"></script>
+    <script src="{% static '/assets/js/delete_product_in_cart.js' %}"></script>
+{% endblock script %}

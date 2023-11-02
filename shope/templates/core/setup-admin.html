@@ -1,0 +1,35 @@
+{% extends "core/base.html" %}
+{% load i18n %}
+{% load static %}
+{% block content_body %}
+    <style>
+        .cache-update { 
+        padding: 40px; 
+        }
+        .clear-success {
+            color: green;
+        }
+        
+
+    </style>
+    <div class="cache-update">
+        <div class="clear-success">
+            {% if messages %}
+                {% for i_message in  messages %}{{ i_message }}{% endfor %}
+            {% endif %}
+        </div>
+        <h1>{% trans "Setup admin panel" %}</h1>
+        {% for i_cache_data in  cache_data %}
+            <div>
+                {{ i_cache_data.key }}
+                {{ i_cache_data.value }} |
+                <a href="{% url 'edit-cache' i_cache_data.pk %}">{% trans "edit" %}</a>
+            </div>
+        {% endfor %}
+        <form action="" method="post">
+            {% csrf_token %}
+            <h2>{% trans "Cache reset all" %}</h2>
+            <button class="btn btn_primary btn_lg" type="submit">{% trans "reset" %}</button>
+        </form>
+    </div>
+{% endblock content_body %}

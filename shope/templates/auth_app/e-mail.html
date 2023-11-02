@@ -1,0 +1,23 @@
+{% extends 'auth_app/base-auth.html' %}
+{% load i18n %}
+
+
+{% block content %}
+    <div class="header">
+        <h3 class="sign-in">{% trans 'Password recovery (1/2)' %}</h3>
+        <h5>{% trans 'To recover your password, enter the email address you registered your account with' %}</h5>
+    </div>
+
+    <form action="{% url 'auth_app:e-mail' %}" method="post">
+        {% csrf_token %}
+        <div>
+            {{ form.email }}
+        </div>
+        <div>
+            <input type="submit" value={% trans 'Get verification code' %}>
+        </div>
+        <a class="registr" href="{% url 'auth_app:login' %}">
+            {% trans 'Sign in' %}
+        </a>
+    </form>
+{% endblock content %}

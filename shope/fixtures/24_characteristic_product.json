@@ -1,0 +1,596 @@
+[
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 1,
+    "fields": {
+      "created_at": "2023-10-05T05:04:49.215Z",
+      "updated_at": "2023-10-05T05:04:49.215Z",
+      "is_active": true,
+      "product": 1,
+      "characteristic_value": 7
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 2,
+    "fields": {
+      "created_at": "2023-10-05T05:05:15.888Z",
+      "updated_at": "2023-10-05T05:05:15.888Z",
+      "is_active": true,
+      "product": 1,
+      "characteristic_value": 6
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 3,
+    "fields": {
+      "created_at": "2023-10-05T05:05:33.313Z",
+      "updated_at": "2023-10-05T05:05:33.313Z",
+      "is_active": true,
+      "product": 1,
+      "characteristic_value": 9
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 4,
+    "fields": {
+      "created_at": "2023-10-05T05:05:41.123Z",
+      "updated_at": "2023-10-05T05:05:41.123Z",
+      "is_active": true,
+      "product": 2,
+      "characteristic_value": 6
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 5,
+    "fields": {
+      "created_at": "2023-10-05T05:05:53.920Z",
+      "updated_at": "2023-10-05T05:05:53.920Z",
+      "is_active": true,
+      "product": 2,
+      "characteristic_value": 8
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 6,
+    "fields": {
+      "created_at": "2023-10-05T05:06:04.598Z",
+      "updated_at": "2023-10-05T05:06:04.598Z",
+      "is_active": true,
+      "product": 2,
+      "characteristic_value": 10
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 7,
+    "fields": {
+      "created_at": "2023-10-05T05:06:32.388Z",
+      "updated_at": "2023-10-05T05:06:32.388Z",
+      "is_active": true,
+      "product": 3,
+      "characteristic_value": 21
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 8,
+    "fields": {
+      "created_at": "2023-10-05T05:06:40.176Z",
+      "updated_at": "2023-10-05T05:06:40.176Z",
+      "is_active": true,
+      "product": 3,
+      "characteristic_value": 7
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 9,
+    "fields": {
+      "created_at": "2023-10-05T05:06:50.684Z",
+      "updated_at": "2023-10-05T05:06:50.684Z",
+      "is_active": true,
+      "product": 3,
+      "characteristic_value": 10
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 10,
+    "fields": {
+      "created_at": "2023-10-05T05:07:20.074Z",
+      "updated_at": "2023-10-05T05:07:20.074Z",
+      "is_active": true,
+      "product": 4,
+      "characteristic_value": 22
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 11,
+    "fields": {
+      "created_at": "2023-10-05T05:07:34.352Z",
+      "updated_at": "2023-10-05T05:07:34.352Z",
+      "is_active": true,
+      "product": 4,
+      "characteristic_value": 7
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 12,
+    "fields": {
+      "created_at": "2023-10-05T05:07:41.646Z",
+      "updated_at": "2023-10-05T05:07:41.646Z",
+      "is_active": true,
+      "product": 4,
+      "characteristic_value": 10
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 13,
+    "fields": {
+      "created_at": "2023-10-05T05:07:51.394Z",
+      "updated_at": "2023-10-05T05:07:51.394Z",
+      "is_active": true,
+      "product": 5,
+      "characteristic_value": 1
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 14,
+    "fields": {
+      "created_at": "2023-10-05T05:08:02.568Z",
+      "updated_at": "2023-10-05T05:08:02.568Z",
+      "is_active": true,
+      "product": 5,
+      "characteristic_value": 3
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 15,
+    "fields": {
+      "created_at": "2023-10-05T05:08:41.161Z",
+      "updated_at": "2023-10-05T05:08:41.161Z",
+      "is_active": true,
+      "product": 6,
+      "characteristic_value": 1
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 16,
+    "fields": {
+      "created_at": "2023-10-05T05:08:56.316Z",
+      "updated_at": "2023-10-05T05:08:56.316Z",
+      "is_active": true,
+      "product": 6,
+      "characteristic_value": 4
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 17,
+    "fields": {
+      "created_at": "2023-10-05T05:10:04.875Z",
+      "updated_at": "2023-10-05T05:10:04.875Z",
+      "is_active": true,
+      "product": 7,
+      "characteristic_value": 23
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 18,
+    "fields": {
+      "created_at": "2023-10-05T05:10:50.542Z",
+      "updated_at": "2023-10-05T05:10:50.542Z",
+      "is_active": true,
+      "product": 7,
+      "characteristic_value": 24
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 19,
+    "fields": {
+      "created_at": "2023-10-05T05:11:34.444Z",
+      "updated_at": "2023-10-05T05:11:34.444Z",
+      "is_active": true,
+      "product": 7,
+      "characteristic_value": 26
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 20,
+    "fields": {
+      "created_at": "2023-10-05T05:11:56.556Z",
+      "updated_at": "2023-10-05T05:11:56.556Z",
+      "is_active": true,
+      "product": 8,
+      "characteristic_value": 27
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 21,
+    "fields": {
+      "created_at": "2023-10-05T05:12:06.914Z",
+      "updated_at": "2023-10-05T05:12:06.914Z",
+      "is_active": true,
+      "product": 8,
+      "characteristic_value": 23
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 22,
+    "fields": {
+      "created_at": "2023-10-05T05:12:15.150Z",
+      "updated_at": "2023-10-05T05:12:15.150Z",
+      "is_active": true,
+      "product": 8,
+      "characteristic_value": 27
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 23,
+    "fields": {
+      "created_at": "2023-10-05T05:12:31.899Z",
+      "updated_at": "2023-10-05T05:12:31.899Z",
+      "is_active": true,
+      "product": 9,
+      "characteristic_value": 23
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 24,
+    "fields": {
+      "created_at": "2023-10-05T05:12:41.826Z",
+      "updated_at": "2023-10-05T05:12:41.826Z",
+      "is_active": true,
+      "product": 9,
+      "characteristic_value": 27
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 25,
+    "fields": {
+      "created_at": "2023-10-05T05:12:55.865Z",
+      "updated_at": "2023-10-05T05:12:55.865Z",
+      "is_active": true,
+      "product": 9,
+      "characteristic_value": 25
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 26,
+    "fields": {
+      "created_at": "2023-10-05T05:15:08.631Z",
+      "updated_at": "2023-10-05T05:15:08.631Z",
+      "is_active": true,
+      "product": 10,
+      "characteristic_value": 28
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 27,
+    "fields": {
+      "created_at": "2023-10-05T05:15:53.473Z",
+      "updated_at": "2023-10-05T05:15:53.473Z",
+      "is_active": true,
+      "product": 10,
+      "characteristic_value": 29
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 28,
+    "fields": {
+      "created_at": "2023-10-05T05:16:10.045Z",
+      "updated_at": "2023-10-05T05:16:10.045Z",
+      "is_active": true,
+      "product": 11,
+      "characteristic_value": 28
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 29,
+    "fields": {
+      "created_at": "2023-10-05T05:16:28.345Z",
+      "updated_at": "2023-10-05T05:16:28.345Z",
+      "is_active": true,
+      "product": 11,
+      "characteristic_value": 30
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 30,
+    "fields": {
+      "created_at": "2023-10-05T05:18:02.860Z",
+      "updated_at": "2023-10-05T05:18:02.860Z",
+      "is_active": true,
+      "product": 12,
+      "characteristic_value": 31
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 31,
+    "fields": {
+      "created_at": "2023-10-05T05:19:51.375Z",
+      "updated_at": "2023-10-05T05:19:51.375Z",
+      "is_active": true,
+      "product": 12,
+      "characteristic_value": 32
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 32,
+    "fields": {
+      "created_at": "2023-10-05T05:21:31.479Z",
+      "updated_at": "2023-10-05T05:21:31.479Z",
+      "is_active": true,
+      "product": 13,
+      "characteristic_value": 33
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 33,
+    "fields": {
+      "created_at": "2023-10-05T05:22:30.646Z",
+      "updated_at": "2023-10-05T05:22:30.647Z",
+      "is_active": true,
+      "product": 14,
+      "characteristic_value": 34
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 34,
+    "fields": {
+      "created_at": "2023-10-05T05:23:01.520Z",
+      "updated_at": "2023-10-05T05:23:01.520Z",
+      "is_active": true,
+      "product": 14,
+      "characteristic_value": 35
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 35,
+    "fields": {
+      "created_at": "2023-10-05T05:24:07.160Z",
+      "updated_at": "2023-10-05T05:24:07.160Z",
+      "is_active": true,
+      "product": 15,
+      "characteristic_value": 36
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 36,
+    "fields": {
+      "created_at": "2023-10-05T05:24:46.146Z",
+      "updated_at": "2023-10-05T05:24:46.146Z",
+      "is_active": true,
+      "product": 15,
+      "characteristic_value": 37
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 37,
+    "fields": {
+      "created_at": "2023-10-05T05:25:13.244Z",
+      "updated_at": "2023-10-05T05:25:13.244Z",
+      "is_active": true,
+      "product": 16,
+      "characteristic_value": 11
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 38,
+    "fields": {
+      "created_at": "2023-10-05T05:25:26.942Z",
+      "updated_at": "2023-10-05T05:25:26.942Z",
+      "is_active": true,
+      "product": 16,
+      "characteristic_value": 16
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 39,
+    "fields": {
+      "created_at": "2023-10-05T05:25:38.281Z",
+      "updated_at": "2023-10-05T05:25:38.282Z",
+      "is_active": true,
+      "product": 16,
+      "characteristic_value": 14
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 40,
+    "fields": {
+      "created_at": "2023-10-05T05:25:55.347Z",
+      "updated_at": "2023-10-05T05:25:55.347Z",
+      "is_active": true,
+      "product": 17,
+      "characteristic_value": 14
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 41,
+    "fields": {
+      "created_at": "2023-10-05T05:26:07.587Z",
+      "updated_at": "2023-10-05T05:26:07.587Z",
+      "is_active": true,
+      "product": 17,
+      "characteristic_value": 17
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 42,
+    "fields": {
+      "created_at": "2023-10-05T05:26:34.212Z",
+      "updated_at": "2023-10-05T05:26:34.212Z",
+      "is_active": true,
+      "product": 17,
+      "characteristic_value": 12
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 43,
+    "fields": {
+      "created_at": "2023-10-05T05:26:44.012Z",
+      "updated_at": "2023-10-05T05:26:44.012Z",
+      "is_active": true,
+      "product": 18,
+      "characteristic_value": 15
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 44,
+    "fields": {
+      "created_at": "2023-10-05T05:26:56.785Z",
+      "updated_at": "2023-10-05T05:26:56.785Z",
+      "is_active": true,
+      "product": 18,
+      "characteristic_value": 17
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 45,
+    "fields": {
+      "created_at": "2023-10-05T05:27:34.148Z",
+      "updated_at": "2023-10-05T05:27:34.148Z",
+      "is_active": true,
+      "product": 18,
+      "characteristic_value": 38
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 46,
+    "fields": {
+      "created_at": "2023-10-05T05:28:43.062Z",
+      "updated_at": "2023-10-05T05:28:43.062Z",
+      "is_active": true,
+      "product": 19,
+      "characteristic_value": 39
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 47,
+    "fields": {
+      "created_at": "2023-10-05T05:29:17.960Z",
+      "updated_at": "2023-10-05T05:29:17.960Z",
+      "is_active": true,
+      "product": 19,
+      "characteristic_value": 40
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 48,
+    "fields": {
+      "created_at": "2023-10-05T05:29:54.161Z",
+      "updated_at": "2023-10-05T05:29:54.161Z",
+      "is_active": true,
+      "product": 19,
+      "characteristic_value": 41
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 49,
+    "fields": {
+      "created_at": "2023-10-05T05:30:03.643Z",
+      "updated_at": "2023-10-05T05:30:03.643Z",
+      "is_active": true,
+      "product": 20,
+      "characteristic_value": 41
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 50,
+    "fields": {
+      "created_at": "2023-10-05T05:30:24.897Z",
+      "updated_at": "2023-10-05T05:30:24.897Z",
+      "is_active": true,
+      "product": 20,
+      "characteristic_value": 42
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 51,
+    "fields": {
+      "created_at": "2023-10-05T05:31:23.983Z",
+      "updated_at": "2023-10-05T05:31:23.983Z",
+      "is_active": true,
+      "product": 21,
+      "characteristic_value": 43
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 52,
+    "fields": {
+      "created_at": "2023-10-05T05:31:56.939Z",
+      "updated_at": "2023-10-05T05:31:56.939Z",
+      "is_active": true,
+      "product": 22,
+      "characteristic_value": 44
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 53,
+    "fields": {
+      "created_at": "2023-10-05T05:33:39.313Z",
+      "updated_at": "2023-10-05T05:33:39.313Z",
+      "is_active": true,
+      "product": 22,
+      "characteristic_value": 45
+    }
+  },
+  {
+    "model": "catalog_app.characteristicproduct",
+    "pk": 54,
+    "fields": {
+      "created_at": "2023-10-05T05:34:13.813Z",
+      "updated_at": "2023-10-05T05:34:13.813Z",
+      "is_active": true,
+      "product": 23,
+      "characteristic_value": 46
+    }
+  }
+]

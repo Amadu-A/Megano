@@ -1,0 +1,60 @@
+{% extends 'core/base.html' %}
+{% load i18n %}
+
+{% block content_body %}
+
+    <div class="Middle Middle_top">
+        <div class="Middle-top">
+            <div class="wrap">
+                <div class="Middle-header">
+
+                    <ul class="breadcrumbs Middle-breadcrumbs">
+                        <li class="breadcrumbs-item"><a href="{% url 'home' %}">{% trans 'Home' %}</a>
+                        </li>
+                        <li class="breadcrumbs-item"><a href="{% url 'sale' %}">{% trans 'Sales' %}</a>
+                        </li>
+                        <li class="breadcrumbs-item breadcrumbs-item_current"><span>{% trans 'Sale detail' %}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="Section">
+            <div class="wrap">
+                <div class="Cards Cards_blog">
+                    <div class="card-heigth-auto Card"><a class="Card-picture" href="#"><img src="{{ sale.image.url }}" alt="product.png" /></a>
+                        <div class="Card-date">
+                            <strong class="Card-date-number">{{ sale.data_start.day }}
+                            </strong><span class="Card-date-month">{{ sale.data_start.month }}</span>
+                        </div>
+                        {% if sale.data_end != sale.data_start %}
+                        <div class="Card-date Card-date_to">
+                            <strong class="Card-date-number">{{ sale.data_end.day }}
+                            </strong><span class="Card-date-month">{{ sale.data_end.month }}</span>
+                        </div>
+                        {% endif %}
+                        <div class="Card-pin">
+                        </div>
+                        <div class="Card-content">
+                            <strong class="Card-title"><span>{{ sale.name }}</span>
+                            </strong>
+                            <div class="Card-description">{{ sale.description }}
+                            </div>
+                            {% if sale.category.all %}
+                                {% trans 'Category products' %}:
+                            {% for cat in sale.category.all %}
+                                <div class="Card-description">
+                                    {{ cat.title }}
+                                </div>
+                            {% endfor %}
+                            {% endif %}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content_body %}
+

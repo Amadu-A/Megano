@@ -1,0 +1,228 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% load i18n %}
+{% load cache %}
+{% block content_body %}
+    {% cache cache_time detail_product product.id %}
+    <div class="Middle Middle_top">
+        <div class="Section">
+            <div class="wrap">
+                <div class="Product" id="{{product.id}}">
+                    <div class="ProductCard">
+                        {% if product.image %}
+                            <div class="ProductCard-look">
+                                <div class="ProductCard-photo">
+                                    <img src="{{ product.image.all.0.image.url }}"
+                                         alt="{{ product.image.all.0.image.name }}">
+                                </div>
+                                <div class="ProductCard-picts">
+                                    {% for product_image in product.image.all %}
+                                        {% if product_image == product.image.all|first %}
+                                            <a class="ProductCard-pict ProductCard-pict_ACTIVE"
+                                               href="{{ product_image.image.url }}">
+                                                <img src="{{ product_image.image.url }}" alt="{{ product_image.name }}">
+                                            </a>
+                                        {% else %}
+                                            <a class="ProductCard-pict" href="{{ product_image.image.url }}">
+                                                <img src="{{ product_image.image.url }}" alt="{{ product_image.name }}">
+                                            </a>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        {% endif %}
+                        <div class="ProductCard-desc">
+                            <div class="ProductCard-header">
+                                <h2 class="ProductCard-title">{{ product.title }}</h2>
+                                <div class="ProductCard-info">
+                                    <div class="ProductCard-cost">
+                                        <div class="ProductCard-price">{{ min_price.price }}</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ProductCard-text">{{ product.name }}</div>
+                            <div class="ProductCard-cart">
+                                <div class="ProductCard-cartElement ProductCard-cartElement_amount">
+                                    <div class="Amount Amount_product">
+                                        <button class="Amount-remove" type="button"></button>
+                                        <input class="Amount-input form-input" name="amount" type="text" value="1">
+                                        <button class="Amount-add" type="button"></button>
+                                    </div>
+                                </div>
+                                <div class="ProductCard-cartElement" id="add-product-cart">
+                                    <a class="btn btn_primary"  data-value="{{ min_price.price }}" data-seller="{{min_price.seller}}" data-name="{{product.name}}">
+                                        <img class="btn-icon"
+                                             src="{% static '/assets/img/icons/card/cart_white.svg' %}"
+                                             alt="cart_white.svg">
+                                        <span class="btn-content">{% trans "Buy" %}</span>
+                                    </a>
+                                </div>
+                                <div class="my_modal" id="modal_open">
+                                    <div class="my_modal-dialog">
+                                        <div class="my_modal-content">
+                                            <div class="my_modal-header">
+                                                <p class="my_modal-title">{% trans "Congratulations" %}!</p>
+                                                <a class="close" href="#" title='{% trans "Close the window" %}'></a>
+                                            </div>
+                                            <div class="my_modal-body">
+                                                <p>{% trans "Product has been added to the cart" %}!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ProductCard-footer">
+                                <div class="ProductCard-tags">
+                                    <strong class="ProductCard-tagsTitle">{% trans "Tags" %}:
+                                        {% for product_tag in product.tag.all %}
+                                            {% if product_tag == product.tag.all|last %}
+                                            </strong><a href="#">{{ product_tag }}</a>
+                                        {% else %}
+                                        </strong><a href="#">{{ product_tag }},</a>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Tabs Tabs_default">
+                    <div class="Tabs-links">
+                        <a class="Tabs-link_ACTIVE Tabs-link" href="#description">
+                            <span>{% trans "Description" %}</span>
+                        </a>
+                        <a class="Tabs-link" href="#sellers">
+                            <span>{% trans "Sellers" %}</span>
+                        </a>
+                        <a class="Tabs-link" href="#addit">
+                            <span>{% trans "Characteristics" %}</span>
+                        </a>
+                        <a class="Tabs-link" href="#reviews">
+                            <span>{% trans "reviews" %} ({{ reviews.all.count }})</span>
+                        </a>
+                    </div>
+                    <div class="Tabs-wrap">
+                        <div class="Tabs-block" id="description">
+                            <h2>{{ product.title }}</h2>
+                            <img class="pict pict_right"
+                                 src="{{ product.image.all.0.image.url }}"
+                                 alt="{{ product.image.all.0.image.name }}">
+                            {{ product.description }}
+                            <div class="clearfix"></div>
+                            <div class="table">
+                                <table>
+                                    <tr>
+                                        <th>{% trans "Characteristic" %}</th>
+                                        <th>{% trans "Value" %}</th>
+                                    </tr>
+                                    {% if characteristics %}
+                                        {% for i_chatacteristic in characteristics.all %}
+                                            <tr>
+                                                <td>{{ i_chatacteristic.characteristic_value.characteristic_type }}</td>
+                                                <td>{{ i_chatacteristic.characteristic_value.value }}</td>
+                                            </tr>
+                                        {% endfor %}
+                                    {% endif %}
+                                </table>
+                            </div>
+                        </div>
+                        <div class="Tabs-block" id="sellers">
+                            <div class="Section-content">
+                                <div class="Orders">
+                                    {% for i_seller in sellers %}
+                                        <div class="Order Order_anons">
+                                            <div class="Order-personal">
+                                                <div class="row">
+                                                    <div class="row-block">
+                                                        <a class="Order-title" href="">{{ i_seller.name }}</a>
+                                                        <div class="ProductCard-cartElement" id="add-product-to" style="margin-top: 10px;">
+                                                            <a class="btn btn_primary" data-value="{{ i_seller.product_seller__price }}" data-seller="{{i_seller.pk}}" data-name="{{product.name}}">
+                                                                <img class="btn-icon"
+                                                                    src="{% static '/assets/img/icons/card/cart_white.svg' %}"
+                                                                    alt="cart_white.svg">
+                                                                <span class="btn-content">{% trans "Buy" %}</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row-block">
+                                                        <div class="Order-info Order-info_delivery">
+                                                            <div class="Order-infoType">{% trans "Delivery" %}:</div>
+                                                            <div class="Order-infoContent">{% trans "Custom delivery" %}</div>
+                                                        </div>
+                                                        <div class="Order-info Order-info_pay">
+                                                            <div class="Order-infoType">{% trans "Payment" %}:</div>
+                                                            <div class="Order-infoContent">{% trans "Cart" %}</div>
+                                                        </div>
+                                                        <div class="Order-info">
+                                                            <div class="Order-infoType">{% trans "Price" %}:</div>
+                                                            <div class="Order-infoContent">
+                                                                <span class="Order-price">{{ i_seller.product_seller__price }}</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Tabs-block" id="addit">
+                            <div class="Product-props">
+                                {% for i_chatacteristic in  characteristics.all %}
+                                    <div class="Product-prop">
+                                        <strong>{{ i_chatacteristic.characteristic_value.characteristic_type }}</strong>
+                                        <span>{{ i_chatacteristic.characteristic_value.value }}</span>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="Tabs-block" id="reviews">
+                            <header class="Section-header">
+                                <h3 class="Section-title">{{ reviews.all.count }} {% trans "Review" %}</h3>
+                            </header>
+                            <div class="Comments">
+                                {% for i_review in  reviews %}
+                                    <div class="Comment">
+                                        <div class="Comment-column Comment-column_pict">
+                                            <div class="Comment-avatar"></div>
+                                        </div>
+                                        <div class="Comment-column">
+                                            <header class="Comment-header">
+                                                <div>
+                                                    <strong class="Comment-title">{{ i_review.user.middle_name }}</strong>
+                                                    <span class="Comment-date">{{ i_review.created_at }}</span>
+                                                </div>
+                                            </header>
+                                            <div class="Comment-content">{{ i_review.text }}</div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                            <header class="Section-header Section-header_product">
+                                <h3 class="Section-title">{% trans "New review" %}</h3>
+                            </header>
+                            <div class="Tabs-addComment">
+                                <form class="form" action="" method="post">
+                                    {% csrf_token %}
+                                    <div class="form-group">
+                                        {{ review_form.text }}
+                                        <input name='user' hidden value={{ request.user.id }}>
+                                        <input name='product' hidden value= {{ product.id }}>
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn_muted" type="submit">{% trans "Add" %}</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% block script %}
+    <script src="{% static '/assets/js/add_to_cart.js' %}"></script>
+{% endblock script %}
+{% endcache %}
+{% endblock content_body %}

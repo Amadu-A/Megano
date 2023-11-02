@@ -1,0 +1,32 @@
+{% load i18n %}
+<div class="Order Order_anons">
+    <div class="Order-personal">
+        <div class="row">
+            <div class="row-block">
+                <a class="Order-title" href="{% url 'order_app:one-order' order.pk %}">{% trans "Order" %} &#32;
+                    <span class="Order-numberOrder">{{ order.pk }}</span>&#32;{% trans "date" %}&#32;<span class="Order-dateOrder">{{ order.created_at|date:"d-m-Y" }}</span></a>
+                <div class="Account-editLink">
+                    <a href="{% url 'order_app:history-order' %}">{% trans "History" %}</a>
+                </div>
+            </div>
+            <div class="row-block">
+                <div class="Order-info Order-info_delivery">
+                    <div class="Order-infoType">{% trans "Delivery" %}:</div>
+                    <div class="Order-infoContent">{{ delivery_type }}</div>
+                </div>
+                <div class="Order-info Order-info_pay">
+                    <div class="Order-infoType">{% trans "Payment" %}:</div>
+                    <div class="Order-infoContent">{{ pay_type }}</div>
+                </div>
+                <div class="Order-info">
+                    <div class="Order-infoType">{% trans "Amount" %}:</div>
+                    <div class="Order-infoContent">{{ order.amount }}</div>
+                </div>
+                <div class="Order-info Order-info_status">
+                    <div class="Order-infoType">{% trans "Status" %}:</div>
+                    <div class="Order-infoContent">{{ status }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
