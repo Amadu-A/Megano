@@ -28,9 +28,9 @@
     celery -A shope worker --loglevel=info
 
 # Running docker
-    docker compose up -d --build - сборка перед стартом контейнеров
-    docker compose up -d - запуск контейнеров (-d для запуска в фоне)
-    docker compose down - остановка контейнеров
+    docker-compose up -d --build - сборка перед стартом контейнеров
+    docker-compose up -d - запуск контейнеров (-d для запуска в фоне)
+    docker-compose down - остановка контейнеров
 
 # Admin
     admin@mail.ru (почта)

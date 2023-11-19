@@ -27,13 +27,11 @@ services:
     networks:
       - live
   backend-shop:
-    build: ./shope
+    build: # ./shope
+      dockerfile: ./Dockerfile
     privileged: true
     command:
       bash -c "
-      pip3 install --upgrade pip &&
-      pip3 install -r requirements.txt &&
-      pip3 install gunicorn &&
       python manage.py migrate &&
       python manage.py import_fixtures &&
       gunicorn shope.wsgi -b 0.0.0.0:8080
@@ -47,6 +45,7 @@ services:
         condition: service_healthy
     environment:
       - DOCKER=True
+      - DEBUG=False
     networks:
       - live
   nginx-shop:
@@ -60,8 +59,9 @@ services:
     networks:
       - live
   celery-worker:
-    build: ./shope
-    command: celery -A shope worker -l info
+    build: # ./shope
+      dockerfile: ./Dockerfile
+    command: ['celery', '-A', 'shope', '-l', 'INFO']
     networks:
       - live
     depends_on:
