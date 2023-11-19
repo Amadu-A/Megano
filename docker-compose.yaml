@@ -1,4 +1,4 @@
-version: "3.3"
+version: "3.5"
 
 services:
   redis-shop:
@@ -31,6 +31,9 @@ services:
     privileged: true
     command:
       bash -c "
+      pip3 install --upgrade pip &&
+      pip3 install -r requirements.txt &&
+      pip3 install gunicorn &&
       python manage.py migrate &&
       python manage.py import_fixtures &&
       gunicorn shope.wsgi -b 0.0.0.0:8080
