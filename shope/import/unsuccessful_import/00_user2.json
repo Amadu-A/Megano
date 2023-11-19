@@ -1,0 +1,222 @@
+[
+  {
+    "model": "auth_app.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$bKNQKBP6vQxnf02xWFtHht$6bhtN9kYa+ZFSNQVJqbH2coIhmG5QHuK+7HpkVoMXa0=",
+      "last_login": "2023-10-04T08:17:43.259Z",
+      "is_superuser": true,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-10-04T08:15:16.197Z",
+      "username": "admin",
+      "email": "admin@mail.ru",
+      "middle_name": "",
+      "activation_key": "",
+      "activation_key_set": "2023-10-04T08:15:16.843Z",
+      "is_activation_key_expired": false,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth_app.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$p3f0XcizvuDb86rrgAGpnI$CpWJpU+qXwxaxo83SAHJHjLxtdyBT1WQPWVBkSg+lfM=",
+      "last_login": "2023-09-09T07:06:32Z",
+      "is_superuser": false,
+      "first_name": "Иван",
+      "last_name": "Иванов",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-09-09T07:05:47Z",
+      "username": "иван",
+      "email": "ivan@mail.ru",
+      "middle_name": "kee",
+      "activation_key": "asd",
+      "activation_key_set": "2023-10-04T08:32:16.880Z",
+      "is_activation_key_expired": false,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth_app.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$C8kmBx8SMWN3SfUjr27Rcq$D0mI2gvZhqrv2zJc5yBJpS7dtCse+NWFonORVKbZuuI=",
+      "last_login": "2023-09-09T07:07:45Z",
+      "is_superuser": false,
+      "first_name": "Ксения",
+      "last_name": "Алурьева",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-09-09T07:07:35Z",
+      "username": "Ксюша",
+      "email": "Ksu@mail.ru",
+      "middle_name": "keeq",
+      "activation_key": "sad",
+      "activation_key_set": "2023-10-04T08:32:56.202Z",
+      "is_activation_key_expired": false,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth_app.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$x9kfgus92uVRJKP314hmhH$J8A/zYWVjXot/rYkAP7pumxzDos65JT0XY35zE5csUE=",
+      "last_login": "2023-09-09T07:08:21Z",
+      "is_superuser": false,
+      "first_name": "Семён",
+      "last_name": "Васильев",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-09-09T07:08:15Z",
+      "username": "Сёма",
+      "email": "Sema@mail.ru",
+      "middle_name": "kea",
+      "activation_key": "fun",
+      "activation_key_set": "2023-10-04T08:35:14.147Z",
+      "is_activation_key_expired": false,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth_app.user",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$27BONlDdp1wBeu0ARB2O6c$TdpvKqDMi6Xz8SdFvlNrbzowDyy2758w3Gw4yqLtsEE=",
+      "last_login": "2023-09-09T07:09:08Z",
+      "is_superuser": false,
+      "first_name": "Корво",
+      "last_name": "Аттано",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-09-09T07:08:59Z",
+      "username": "Корво",
+      "email": "Korvo@mail.ru",
+      "middle_name": "honor",
+      "activation_key": "key",
+      "activation_key_set": "2023-10-04T08:31:27.221Z",
+      "is_activation_key_expired": false,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth_app.user",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$Q5LYeObRSW3ORzdhgybLyF$/rW6PgaqQBllKpeHQX4Qbp+Fie2IB1VKJbyeSTIknFA=",
+      "last_login": "2023-09-09T07:09:42Z",
+      "is_superuser": false,
+      "first_name": "Кейбл",
+      "last_name": "Всс",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-09-09T07:09:35Z",
+      "username": "Кейбл",
+      "email": "Keibl@mail.ru",
+      "middle_name": "Вссс",
+      "activation_key": "run",
+      "activation_key_set": "2023-10-04T08:34:21.120Z",
+      "is_activation_key_expired": false,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth_app.user",
+    "pk": 7,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$E4OjBjQX3KdqCeGOvWwG2X$23+7KmVRHtcrB8TnP4lbL7rA4v1V7LNKSkrsCvYRZEI=",
+      "last_login": "2023-09-09T07:10:50Z",
+      "is_superuser": false,
+      "first_name": "Блейд",
+      "last_name": "Огонь",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-09-09T07:10:40Z",
+      "username": "Блейд",
+      "email": "Blade@mail.ru",
+      "middle_name": "rat",
+      "activation_key": "zxc",
+      "activation_key_set": "2023-10-04T08:33:58.815Z",
+      "is_activation_key_expired": false,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth_app.user",
+    "pk": 8,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$De0qsV2opl66bIdCyo4AOl$RLZEHBTGNM7eFcRA4w7ym6VebHYLAzqqVXWulZLn8xw=",
+      "last_login": "2023-09-09T07:11:32Z",
+      "is_superuser": false,
+      "first_name": "Дима",
+      "last_name": "Иванов",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-09-09T07:11:26Z",
+      "username": "Дима",
+      "email": "dima@mail.ru",
+      "middle_name": "sdd",
+      "activation_key": "qww",
+      "activation_key_set": "2023-10-04T08:34:12.114Z",
+      "is_activation_key_expired": false,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth_app.user",
+    "pk": 9,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$3SPlyJx4Qa0LY7NQmxOH4k$e1MeTHXnnh9q98u2jObG2kag/vXPQUS8Bd4WgKO1cn0=",
+      "last_login": "2023-09-09T07:12:22Z",
+      "is_superuser": false,
+      "first_name": "Лило",
+      "last_name": "Палм",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-09-09T07:12:20Z",
+      "username": "Лило",
+      "email": "Lilo@mail.ru",
+      "middle_name": "Палма",
+      "activation_key": "iii",
+      "activation_key_set": "2023-10-04T08:34:39.864Z",
+      "is_activation_key_expired": false,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth_app.user",
+    "pk": 10,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$AQ6kEZ7EYWbt6AEPM21jY6$AyXji4CFzuiMo+ThMj/ohXkoUcsKtA/ZCfKq7qWwrOc=",
+      "last_login": "2023-09-09T07:12:50Z",
+      "is_superuser": false,
+      "first_name": "Стич",
+      "last_name": "Палм",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-09-09T07:12:46Z",
+      "username": "Стич",
+      "email": "Stich@mail.ru",
+      "middle_name": "Палма",
+      "activation_key": "qqq",
+      "activation_key_set": "2023-10-04T08:25:17.001Z",
+      "is_activation_key_expired": false,
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "model": "taggit.tag",
+    "pk": 1,
+    "fields": {
+      "name": "video",
+      "slug": "video"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 2,
+    "fields": {
+      "name": "tv",
+      "slug": "tv"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 3,
+    "fields": {
+      "name": "headphones",
+      "slug": "headphones"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 4,
+    "fields": {
+      "name": "camera",
+      "slug": "camera"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 5,
+    "fields": {
+      "name": "audio",
+      "slug": "audio"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 6,
+    "fields": {
+      "name": "furniture",
+      "slug": "furniture"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 7,
+    "fields": {
+      "name": "telephone",
+      "slug": "telephone"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 8,
+    "fields": {
+      "name": "kitchen appliances",
+      "slug": "kitchen appliances"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 9,
+    "fields": {
+      "name": "bathroom appliances",
+      "slug": "bathroom appliances"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 10,
+    "fields": {
+      "name": "appliances",
+      "slug": "appliances"
+    }
+  }
+]

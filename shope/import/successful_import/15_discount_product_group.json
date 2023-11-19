@@ -1,0 +1,46 @@
+[
+  {
+    "model": "catalog_app.discountproductgroup",
+    "pk": 1,
+    "fields": {
+      "created_at": "2023-10-23T21:02:07.069Z",
+      "updated_at": "2023-10-23T21:02:07.069Z",
+      "is_active": true,
+      "name": "Скидки на наушники и фотоаппараты",
+      "priority": 1,
+      "value": 1,
+      "data_start": "2023-10-23",
+      "data_end": "2023-10-31",
+      "description": "Купи любые наушники вместе с фотоаппаратом и получи скидку на 2000 рублей!",
+      "image": "images/2023/10/24/sale-pic.png",
+      "amount": "2000.00",
+      "fixprice": "1.00",
+      "category": [
+        2,
+        6
+      ]
+    }
+  },
+  {
+    "model": "catalog_app.discountproductgroup",
+    "pk": 2,
+    "fields": {
+      "created_at": "2023-10-23T21:04:21.231Z",
+      "updated_at": "2023-10-23T21:04:21.231Z",
+      "is_active": true,
+      "name": "Скидки на кухонную технику и торшеры",
+      "priority": 1,
+      "value": 1,
+      "data_start": "2023-10-23",
+      "data_end": "2023-11-30",
+      "description": "Купи торшер вместе с любой кухонной техникой и получи скидку до 50000 рублей. Спеши! Только до конца ноября!",
+      "image": "images/2023/10/24/sale-pic_ZHmLSE5.png",
+      "amount": "50000.00",
+      "fixprice": "1.00",
+      "category": [
+        10,
+        11
+      ]
+    }
+  }
+]

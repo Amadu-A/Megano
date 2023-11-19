@@ -1,0 +1,508 @@
+[
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 1,
+    "fields": {
+      "created_at": "2023-10-05T04:58:35.340Z",
+      "updated_at": "2023-10-05T04:58:35.340Z",
+      "is_active": true,
+      "characteristic_type": 8,
+      "value": "Проводные"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 2,
+    "fields": {
+      "created_at": "2023-10-05T04:58:53.589Z",
+      "updated_at": "2023-10-05T04:58:53.589Z",
+      "is_active": true,
+      "characteristic_type": 8,
+      "value": "Беспроводные"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 3,
+    "fields": {
+      "created_at": "2023-10-05T04:59:11.138Z",
+      "updated_at": "2023-10-05T04:59:11.139Z",
+      "is_active": true,
+      "characteristic_type": 9,
+      "value": "Кнопочное"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 4,
+    "fields": {
+      "created_at": "2023-10-05T04:59:20.605Z",
+      "updated_at": "2023-10-05T04:59:20.605Z",
+      "is_active": true,
+      "characteristic_type": 9,
+      "value": "Сенсорное"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 5,
+    "fields": {
+      "created_at": "2023-10-05T04:59:27.706Z",
+      "updated_at": "2023-10-05T04:59:27.706Z",
+      "is_active": true,
+      "characteristic_type": 9,
+      "value": "нет"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 6,
+    "fields": {
+      "created_at": "2023-10-05T04:59:57.871Z",
+      "updated_at": "2023-10-05T05:05:13.526Z",
+      "is_active": true,
+      "characteristic_type": 1,
+      "value": "24\""
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 7,
+    "fields": {
+      "created_at": "2023-10-05T05:00:19.718Z",
+      "updated_at": "2023-10-05T05:00:19.718Z",
+      "is_active": true,
+      "characteristic_type": 4,
+      "value": "Да"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 8,
+    "fields": {
+      "created_at": "2023-10-05T05:00:24.539Z",
+      "updated_at": "2023-10-05T05:00:24.539Z",
+      "is_active": true,
+      "characteristic_type": 4,
+      "value": "Нет"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 9,
+    "fields": {
+      "created_at": "2023-10-05T05:00:30.606Z",
+      "updated_at": "2023-10-05T05:00:30.606Z",
+      "is_active": true,
+      "characteristic_type": 5,
+      "value": "Да"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 10,
+    "fields": {
+      "created_at": "2023-10-05T05:00:35.609Z",
+      "updated_at": "2023-10-05T05:00:35.609Z",
+      "is_active": true,
+      "characteristic_type": 5,
+      "value": "Нет"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 11,
+    "fields": {
+      "created_at": "2023-10-05T05:00:50.734Z",
+      "updated_at": "2023-10-05T05:25:11.784Z",
+      "is_active": true,
+      "characteristic_type": 2,
+      "value": "6,55\""
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 12,
+    "fields": {
+      "created_at": "2023-10-05T05:00:57.039Z",
+      "updated_at": "2023-10-05T05:26:32.930Z",
+      "is_active": true,
+      "characteristic_type": 2,
+      "value": "4.77\""
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 13,
+    "fields": {
+      "created_at": "2023-10-05T05:01:09.912Z",
+      "updated_at": "2023-10-05T05:01:09.912Z",
+      "is_active": true,
+      "characteristic_type": 3,
+      "value": "Металл"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 14,
+    "fields": {
+      "created_at": "2023-10-05T05:01:22.139Z",
+      "updated_at": "2023-10-05T05:01:22.139Z",
+      "is_active": true,
+      "characteristic_type": 3,
+      "value": "Пластик"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 15,
+    "fields": {
+      "created_at": "2023-10-05T05:01:29.307Z",
+      "updated_at": "2023-10-05T05:01:29.307Z",
+      "is_active": true,
+      "characteristic_type": 3,
+      "value": "Стекло"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 16,
+    "fields": {
+      "created_at": "2023-10-05T05:02:35.803Z",
+      "updated_at": "2023-10-05T05:02:35.803Z",
+      "is_active": true,
+      "characteristic_type": 7,
+      "value": "Android"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 17,
+    "fields": {
+      "created_at": "2023-10-05T05:02:46.358Z",
+      "updated_at": "2023-10-05T05:02:46.359Z",
+      "is_active": true,
+      "characteristic_type": 7,
+      "value": "iOS"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 18,
+    "fields": {
+      "created_at": "2023-10-05T05:03:38.913Z",
+      "updated_at": "2023-10-05T05:03:38.914Z",
+      "is_active": true,
+      "characteristic_type": 10,
+      "value": "Поддержка быстрой зарядки"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 19,
+    "fields": {
+      "created_at": "2023-10-05T05:03:53.256Z",
+      "updated_at": "2023-10-05T05:03:53.256Z",
+      "is_active": true,
+      "characteristic_type": 10,
+      "value": "Беспроводная зарядка"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 20,
+    "fields": {
+      "created_at": "2023-10-05T05:04:07.697Z",
+      "updated_at": "2023-10-05T05:04:07.697Z",
+      "is_active": true,
+      "characteristic_type": 10,
+      "value": "Стандартная зарядка"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 21,
+    "fields": {
+      "created_at": "2023-10-05T05:06:29.494Z",
+      "updated_at": "2023-10-05T05:06:29.495Z",
+      "is_active": true,
+      "characteristic_type": 1,
+      "value": "55\""
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 22,
+    "fields": {
+      "created_at": "2023-10-05T05:07:16.741Z",
+      "updated_at": "2023-10-05T05:07:16.741Z",
+      "is_active": true,
+      "characteristic_type": 1,
+      "value": "50\""
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 23,
+    "fields": {
+      "created_at": "2023-10-05T05:10:00.308Z",
+      "updated_at": "2023-10-05T05:10:00.308Z",
+      "is_active": true,
+      "characteristic_type": 11,
+      "value": "Горизонтальная"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 24,
+    "fields": {
+      "created_at": "2023-10-05T05:10:37.304Z",
+      "updated_at": "2023-10-05T05:10:37.304Z",
+      "is_active": true,
+      "characteristic_type": 12,
+      "value": "Да"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 25,
+    "fields": {
+      "created_at": "2023-10-05T05:11:21.341Z",
+      "updated_at": "2023-10-05T05:11:21.342Z",
+      "is_active": true,
+      "characteristic_type": 13,
+      "value": "Да"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 26,
+    "fields": {
+      "created_at": "2023-10-05T05:11:33.023Z",
+      "updated_at": "2023-10-05T05:11:33.023Z",
+      "is_active": true,
+      "characteristic_type": 13,
+      "value": "Нет"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 27,
+    "fields": {
+      "created_at": "2023-10-05T05:11:54.171Z",
+      "updated_at": "2023-10-05T05:11:54.171Z",
+      "is_active": true,
+      "characteristic_type": 12,
+      "value": "Нет"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 28,
+    "fields": {
+      "created_at": "2023-10-05T05:15:07.141Z",
+      "updated_at": "2023-10-05T05:15:07.141Z",
+      "is_active": true,
+      "characteristic_type": 14,
+      "value": "50 вт"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 29,
+    "fields": {
+      "created_at": "2023-10-05T05:15:52.007Z",
+      "updated_at": "2023-10-05T05:15:52.007Z",
+      "is_active": true,
+      "characteristic_type": 15,
+      "value": "5.1"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 30,
+    "fields": {
+      "created_at": "2023-10-05T05:16:26.489Z",
+      "updated_at": "2023-10-05T05:16:26.489Z",
+      "is_active": true,
+      "characteristic_type": 15,
+      "value": "2.0"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 31,
+    "fields": {
+      "created_at": "2023-10-05T05:18:00.916Z",
+      "updated_at": "2023-10-05T05:18:00.916Z",
+      "is_active": true,
+      "characteristic_type": 16,
+      "value": "CMOS"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 32,
+    "fields": {
+      "created_at": "2023-10-05T05:19:49.699Z",
+      "updated_at": "2023-10-05T05:19:49.699Z",
+      "is_active": true,
+      "characteristic_type": 17,
+      "value": "With 64G SD Card"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 33,
+    "fields": {
+      "created_at": "2023-10-05T05:21:07.422Z",
+      "updated_at": "2023-10-05T05:21:29.260Z",
+      "is_active": true,
+      "characteristic_type": 18,
+      "value": "Встроенная"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 34,
+    "fields": {
+      "created_at": "2023-10-05T05:22:04.690Z",
+      "updated_at": "2023-10-05T05:22:28.239Z",
+      "is_active": true,
+      "characteristic_type": 19,
+      "value": "Лазерный"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 35,
+    "fields": {
+      "created_at": "2023-10-05T05:23:00.364Z",
+      "updated_at": "2023-10-05T05:23:00.364Z",
+      "is_active": true,
+      "characteristic_type": 20,
+      "value": "2 тыс стр"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 36,
+    "fields": {
+      "created_at": "2023-10-05T05:23:51.324Z",
+      "updated_at": "2023-10-05T05:24:05.644Z",
+      "is_active": true,
+      "characteristic_type": 21,
+      "value": "Да"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 37,
+    "fields": {
+      "created_at": "2023-10-05T05:24:44.265Z",
+      "updated_at": "2023-10-05T05:24:44.265Z",
+      "is_active": true,
+      "characteristic_type": 22,
+      "value": "Коричневый"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 38,
+    "fields": {
+      "created_at": "2023-10-05T05:27:32.553Z",
+      "updated_at": "2023-10-05T05:27:32.553Z",
+      "is_active": true,
+      "characteristic_type": 2,
+      "value": "6,7\""
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 39,
+    "fields": {
+      "created_at": "2023-10-05T05:28:41.343Z",
+      "updated_at": "2023-10-05T05:28:41.344Z",
+      "is_active": true,
+      "characteristic_type": 23,
+      "value": "Внешняя установка"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 40,
+    "fields": {
+      "created_at": "2023-10-05T05:29:16.246Z",
+      "updated_at": "2023-10-05T05:29:16.247Z",
+      "is_active": true,
+      "characteristic_type": 24,
+      "value": "Сенсорное"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 41,
+    "fields": {
+      "created_at": "2023-10-05T05:29:52.460Z",
+      "updated_at": "2023-10-05T05:29:52.461Z",
+      "is_active": true,
+      "characteristic_type": 25,
+      "value": "Да"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 42,
+    "fields": {
+      "created_at": "2023-10-05T05:30:22.540Z",
+      "updated_at": "2023-10-05T05:30:22.540Z",
+      "is_active": true,
+      "characteristic_type": 23,
+      "value": "Встраиваемая"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 43,
+    "fields": {
+      "created_at": "2023-10-05T05:31:20.391Z",
+      "updated_at": "2023-10-05T05:31:20.392Z",
+      "is_active": true,
+      "characteristic_type": 26,
+      "value": "2"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 44,
+    "fields": {
+      "created_at": "2023-10-05T05:31:52.460Z",
+      "updated_at": "2023-10-05T05:31:52.460Z",
+      "is_active": true,
+      "characteristic_type": 27,
+      "value": "Да"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 45,
+    "fields": {
+      "created_at": "2023-10-05T05:33:28.092Z",
+      "updated_at": "2023-10-05T05:33:28.092Z",
+      "is_active": true,
+      "characteristic_type": 28,
+      "value": "Эспрессо, Капучино"
+    }
+  },
+  {
+    "model": "catalog_app.characteristicvalue",
+    "pk": 46,
+    "fields": {
+      "created_at": "2023-10-05T05:34:11.958Z",
+      "updated_at": "2023-10-05T05:34:11.958Z",
+      "is_active": true,
+      "characteristic_type": 29,
+      "value": "Напольный"
+    }
+  }
+]

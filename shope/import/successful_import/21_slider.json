@@ -1,0 +1,50 @@
+[
+  {
+    "model": "catalog_app.slider",
+    "pk": 1,
+    "fields": {
+      "created_at": "2023-09-25T12:03:37.284Z",
+      "updated_at": "2023-09-25T12:03:37.284Z",
+      "is_active": true,
+      "product": 12,
+      "description": "Лучшее предложение из зеркалок! Nikon.\r\nAF-P DX 18-55mm F/3.5-5.6G VR",
+      "image": "images/2023/09/25/Nikon-D7500-obzor_ONKUFQN.jpg"
+    }
+  },
+  {
+    "model": "catalog_app.slider",
+    "pk": 2,
+    "fields": {
+      "created_at": "2023-09-25T12:07:30.102Z",
+      "updated_at": "2023-09-25T12:07:30.102Z",
+      "is_active": true,
+      "product": 18,
+      "description": "Отличный подарок к любому событию! Порадуй близкого тебе человека!",
+      "image": "images/2023/09/25/iphone.png"
+    }
+  },
+  {
+    "model": "catalog_app.slider",
+    "pk": 3,
+    "fields": {
+      "created_at": "2023-09-25T12:10:42.845Z",
+      "updated_at": "2023-09-25T12:10:42.845Z",
+      "is_active": true,
+      "product": 13,
+      "description": "Согласно исследованиям, мужчины остаются детьми до 40 лет",
+      "image": "images/2023/09/25/maverik.jpg"
+    }
+  },
+  {
+    "model": "catalog_app.slider",
+    "pk": 4,
+    "fields": {
+      "created_at": "2023-09-25T12:12:30.938Z",
+      "updated_at": "2023-09-25T12:12:30.938Z",
+      "is_active": true,
+      "product": 9,
+      "description": "Хватит стирать! Научись жить!",
+      "image": "images/2023/09/25/lg.jpg"
+    }
+  }
+]

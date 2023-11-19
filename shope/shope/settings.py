@@ -23,12 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-!s-kq@=nln)z#y)caov*1-4nog(_8s1=&e19ofq2cr0*k8#bbm'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('DEBUG')
 
-DOCKER = False
+DOCKER = os.environ.get('DOCKER')
 # Docker
 if DOCKER:
     DATABASES = {
@@ -208,8 +208,8 @@ PAY_ACCOUNT_ID = os.environ.get('PAY_ACCOUNT_ID')
 PAY_ACCOUNT_SECRET_KEY = os.environ.get('PAY_ACCOUNT_SECRET_KEY')
 
 # celery
-CELERY_TIMEZONE = "Moldova/Chișinău"
-CELERY_TASK_TRACK_STARTED = True
+CELERY_TIMEZONE = os.environ.get('CELERY_TIMEZONE')
+CELERY_TASK_TRACK_STARTED = os.environ.get('CELERY_TASK_TRACK_STARTED')
 CELERY_TASK_TIME_LIMIT = 30 * 60
 
 # REDIS

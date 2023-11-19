@@ -1,0 +1,321 @@
+[
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 1,
+    "fields": {
+      "created_at": "2023-10-05T04:50:13.756Z",
+      "updated_at": "2023-10-05T04:50:13.757Z",
+      "is_active": true,
+      "name": "Диагональ экрана",
+      "category": 1
+    }
+  },
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 2,
+    "fields": {
+      "created_at": "2023-10-05T04:52:14.675Z",
+      "updated_at": "2023-10-05T04:52:14.675Z",
+      "is_active": true,
+      "name": "Диагональ смартфона",
+      "category": 8
+    }
+  },
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 3,
+    "fields": {
+      "created_at": "2023-10-05T04:53:10.945Z",
+      "updated_at": "2023-10-05T04:53:10.945Z",
+      "is_active": true,
+      "name": "Материал корпуса",
+      "category": 8
+    }
+  },
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 4,
+    "fields": {
+      "created_at": "2023-10-05T04:53:38.189Z",
+      "updated_at": "2023-10-05T04:53:38.189Z",
+      "is_active": true,
+      "name": "Смарт ТВ",
+      "category": 1
+    }
+  },
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 5,
+    "fields": {
+      "created_at": "2023-10-05T04:54:22.012Z",
+      "updated_at": "2023-10-05T04:54:22.012Z",
+      "is_active": true,
+      "name": "Крепление к стене",
+      "category": 1
+    }
+  },
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 6,
+    "fields": {
+      "created_at": "2023-10-05T04:55:17.979Z",
+      "updated_at": "2023-10-05T04:55:17.979Z",
+      "is_active": true,
+      "name": "Разрешение экрана",
+      "category": 1
+    }
+  },
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 7,
+    "fields": {
+      "created_at": "2023-10-05T04:55:48.938Z",
+      "updated_at": "2023-10-05T05:02:21.393Z",
+      "is_active": true,
+      "name": "Операционная система",
+      "category": 8
+    }
+  },
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 8,
+    "fields": {
+      "created_at": "2023-10-05T04:56:33.551Z",
+      "updated_at": "2023-10-05T04:56:33.551Z",
+      "is_active": true,
+      "name": "Подключение наушников",
+      "category": 2
+    }
+  },
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 9,
+    "fields": {
+      "created_at": "2023-10-05T04:57:35.245Z",
+      "updated_at": "2023-10-05T04:57:35.245Z",
+      "is_active": true,
+      "name": "Управление наушниками",
+      "category": 2
+    }
+  },
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 10,
+    "fields": {
+      "created_at": "2023-10-05T05:03:21.923Z",
+      "updated_at": "2023-10-05T05:03:21.923Z",
+      "is_active": true,
+      "name": "Функции зарядки",
+      "category": 8
+    }
+  },
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 11,
+    "fields": {
+      "created_at": "2023-10-05T05:09:46.328Z",
+      "updated_at": "2023-10-05T05:09:46.329Z",
+      "is_active": true,
+      "name": "Тип загрузки",
+      "category": 3
+    }
+  },
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 12,
+    "fields": {
+      "created_at": "2023-10-05T05:10:29.690Z",
+      "updated_at": "2023-10-05T05:10:29.690Z",
+      "is_active": true,
+      "name": "Сушка белья",
+      "category": 3
+    }
+  },
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 13,
+    "fields": {
+      "created_at": "2023-10-05T05:11:16.072Z",
+      "updated_at": "2023-10-05T05:11:16.072Z",
+      "is_active": true,
+      "name": "Обработка паром",
+      "category": 3
+    }
+  },
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 14,
+    "fields": {
+      "created_at": "2023-10-05T05:14:56.527Z",
+      "updated_at": "2023-10-05T05:14:56.527Z",
+      "is_active": true,
+      "name": "Мощность звука",
+      "category": 5
+    }
+  },
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 15,
+    "fields": {
+      "created_at": "2023-10-05T05:15:45.841Z",
+      "updated_at": "2023-10-05T05:15:45.841Z",
+      "is_active": true,
+      "name": "Звуковая схема",
+      "category": 5
+    }
+  },
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 16,
+    "fields": {
+      "created_at": "2023-10-05T05:17:48.182Z",
+      "updated_at": "2023-10-05T05:17:48.182Z",
+      "is_active": true,
+      "name": "Матрица фотоаппарата",
+      "category": 6
+    }
+  },
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 17,
+    "fields": {
+      "created_at": "2023-10-05T05:19:31.497Z",
+      "updated_at": "2023-10-05T05:19:31.497Z",
+      "is_active": true,
+      "name": "Тип объектива",
+      "category": 6
+    }
+  },
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 18,
+    "fields": {
+      "created_at": "2023-10-05T05:20:57.590Z",
+      "updated_at": "2023-10-05T05:21:28.116Z",
+      "is_active": true,
+      "name": "Камера квадрокоптера",
+      "category": 6
+    }
+  },
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 19,
+    "fields": {
+      "created_at": "2023-10-05T05:21:57.907Z",
+      "updated_at": "2023-10-05T05:22:26.743Z",
+      "is_active": true,
+      "name": "Вид печати",
+      "category": 7
+    }
+  },
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 20,
+    "fields": {
+      "created_at": "2023-10-05T05:22:51.790Z",
+      "updated_at": "2023-10-05T05:22:51.790Z",
+      "is_active": true,
+      "name": "Объем картриджа",
+      "category": 7
+    }
+  },
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 21,
+    "fields": {
+      "created_at": "2023-10-05T05:23:47.513Z",
+      "updated_at": "2023-10-05T05:23:47.513Z",
+      "is_active": true,
+      "name": "Выдвижная пдставка",
+      "category": 7
+    }
+  },
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 22,
+    "fields": {
+      "created_at": "2023-10-05T05:24:38.342Z",
+      "updated_at": "2023-10-05T05:24:38.342Z",
+      "is_active": true,
+      "name": "Цвет стола",
+      "category": 7
+    }
+  },
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 23,
+    "fields": {
+      "created_at": "2023-10-05T05:28:22.100Z",
+      "updated_at": "2023-10-05T05:28:22.100Z",
+      "is_active": true,
+      "name": "Тип микроволновки",
+      "category": 9
+    }
+  },
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 24,
+    "fields": {
+      "created_at": "2023-10-05T05:29:09.552Z",
+      "updated_at": "2023-10-05T05:29:09.552Z",
+      "is_active": true,
+      "name": "Управление микроволновки",
+      "category": 9
+    }
+  },
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 25,
+    "fields": {
+      "created_at": "2023-10-05T05:29:48.774Z",
+      "updated_at": "2023-10-05T05:29:48.774Z",
+      "is_active": true,
+      "name": "Наличие гриля",
+      "category": 9
+    }
+  },
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 26,
+    "fields": {
+      "created_at": "2023-10-05T05:31:15.169Z",
+      "updated_at": "2023-10-05T05:31:15.169Z",
+      "is_active": true,
+      "name": "Объем литров",
+      "category": 10
+    }
+  },
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 27,
+    "fields": {
+      "created_at": "2023-10-05T05:31:49.222Z",
+      "updated_at": "2023-10-05T05:31:49.222Z",
+      "is_active": true,
+      "name": "Кофемолка",
+      "category": 10
+    }
+  },
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 28,
+    "fields": {
+      "created_at": "2023-10-05T05:33:06.209Z",
+      "updated_at": "2023-10-05T05:33:06.209Z",
+      "is_active": true,
+      "name": "Виды напитков",
+      "category": 10
+    }
+  },
+  {
+    "model": "catalog_app.characteristictype",
+    "pk": 29,
+    "fields": {
+      "created_at": "2023-10-05T05:34:05.562Z",
+      "updated_at": "2023-10-05T05:34:05.562Z",
+      "is_active": true,
+      "name": "Установка торшера",
+      "category": 11
+    }
+  }
+]
