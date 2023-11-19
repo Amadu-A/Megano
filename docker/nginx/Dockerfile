@@ -2,7 +2,7 @@
 #
 #RUN rm /etc/nginx/conf.d/default.conf
 #COPY nginx.conf /etc/nginx/conf.d
-from python:3.8.6
+from python:3.11
 
 RUN pip3 install --upgrade pip
 COPY ./ ./

@@ -26,9 +26,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG')
+DEBUG = True
 
-DOCKER = os.environ.get('DOCKER')
+DOCKER = False
 # Docker
 if DOCKER:
     DATABASES = {
@@ -209,7 +209,7 @@ PAY_ACCOUNT_SECRET_KEY = os.environ.get('PAY_ACCOUNT_SECRET_KEY')
 
 # celery
 CELERY_TIMEZONE = os.environ.get('CELERY_TIMEZONE')
-CELERY_TASK_TRACK_STARTED = os.environ.get('CELERY_TASK_TRACK_STARTED')
+CELERY_TASK_TRACK_STARTED = True
 CELERY_TASK_TIME_LIMIT = 30 * 60
 
 # REDIS

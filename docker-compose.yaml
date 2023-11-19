@@ -32,8 +32,6 @@ services:
     privileged: true
     command:
       bash -c "
-      python manage.py migrate &&
-      python manage.py import_fixtures &&
       gunicorn shope.wsgi -b 0.0.0.0:8080
       "
     volumes:
